@@ -1,0 +1,57 @@
+html{
+	background-image: url(resources/images/seattle_main.jpg);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+body{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 200;
+	text-align: center;
+	color: #fff;
+}
+
+.container{
+  box-shadow: 0px 0px 500px 500px rgba(58, 64, 90, 0.6);
+  background: rgba(58, 64, 90, 0.6);
+}
+
+h1{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+	font-size: 10vh;
+	line-height: 1vh;
+	margin-top: 40vh;
+}
+
+p{
+	font-size: 4vh;
+}
+
+.resume-button{
+	background-color: rgba(255, 255, 255, 0.2);
+	font-family: 'Dosis', sans-serif;
+    border: 1px solid white;
+    color: white;
+    margin-top: 12vh;
+    padding: 1.5vh 2vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vh;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
