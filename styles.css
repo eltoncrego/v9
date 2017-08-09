@@ -281,7 +281,7 @@ header img{
 	.class-box{
 		padding: 3pt 5pt !important;
 		margin: 8pt 5pt !important;
-		font-size: 20pt !important;
+		font-size: 15pt !important;
 	}
 
 }
@@ -298,7 +298,7 @@ header img{
 
 @media screen and (max-width: 575px) {
     #professional-shot {
-		max-height: 60vh;
+		max-height: 300pt;
 		text-align: center;
 		display: block;
 		margin: 0 auto;
