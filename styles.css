@@ -202,6 +202,22 @@ header img{
 	p{
 		font-size: 4vh !important;
 	}
+
+	.main-buttom{
+		padding: 1.5vh 2vh !important;
+	}
+
+	.white-bg-section {
+		padding: 15vh 10vw !important;
+	}
+
+	.bg-section {
+		padding: 15vh 10vw !important;
+	}
+
+	.class-box{
+		padding: 1.5vh 2vh !important;
+	}
 }
 
 @media screen and (orientation: portrait) and (max-width: 860px) {
@@ -223,6 +239,22 @@ header img{
 
 	p{
 		font-size: 20pt !important;
+	}
+
+	.main-buttom{
+		padding: 3pt 5pt !important;
+	}
+
+	.white-bg-section {
+		padding: 40pt 30pt !important;
+	}
+
+	.bg-section {
+		padding: 40pt 30pt !important;
+	}
+
+	.class-box{
+		padding: 3pt 5pt !important;
 	}
 }
 
