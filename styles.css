@@ -182,7 +182,7 @@ header img{
 }
 
 
-@media screen and (orientation: portrait) and (min-width: 860px) {
+@media screen and (orientation: portrait) and (min-width: 900px) {
 	.sketches{
 		display: relative !important;
 	}	
@@ -204,12 +204,18 @@ header img{
 		font-size: 4vh !important;
 	}
 
+	.header{
+		height: 100vh !important;
+	}
+
 	.buttons{
 		margin-top: 12vh !important;
 	}
 
 	.main-buttom{
+		margin: 2vh 1vw !important;
 		padding: 1.5vh 2vh !important;
+		font-size: 3vh !important;
 	}
 
 	.white-bg-section {
@@ -223,14 +229,11 @@ header img{
 	.class-box{
 		padding: 1.5vh 2vh !important;
 		margin: 2vh 1vw !important;
-	}
-
-	.main-button{
-		margin: 2vh 1vw !important;
+		font-size: 4vh !important;
 	}
 }
 
-@media screen and (orientation: portrait) and (max-width: 860px) {
+@media screen and (orientation: portrait) and (max-width: 900px) {
 	.sketches{
 		display: none !important;
 	}
@@ -241,7 +244,7 @@ header img{
 
 	h1{
 		font-size: 40pt !important;
-		margin-top: 150pt !important;
+		margin-top: 120pt !important;
 	}
 
 	h2{
@@ -252,12 +255,19 @@ header img{
 		font-size: 20pt !important;
 	}
 
+	.header{
+		height: 500pt !important;
+	}
+
 	.buttons{
 		margin-top: 20pt !important;
+		margin-bottom: 40pt !important;
 	}
 
 	.main-buttom{
+		margin: 8pt 5pt !important;
 		padding: 3pt 5pt !important;
+		font-size: 20pt !important;
 	}
 
 	.white-bg-section {
@@ -271,11 +281,9 @@ header img{
 	.class-box{
 		padding: 3pt 5pt !important;
 		margin: 8pt 5pt !important;
+		font-size: 20pt !important;
 	}
 
-	.main-button{
-		margin: 8pt 5pt !important;
-	}
 }
 
 @media screen and (min-width: 575px) {
