@@ -228,7 +228,7 @@ header img{
 
 	.class-box{
 		padding: 1.5vh 2vh !important;
-		margin: 2vh 1vw !important;
+		/*margin: 2vh 1vw !important;*/
 		font-size: 4vh !important;
 	}
 }
@@ -280,7 +280,7 @@ header img{
 
 	.class-box{
 		padding: 3pt 5pt !important;
-		margin: 8pt 5pt !important;
+		/*margin: 8pt 5pt !important;*/
 		font-size: 15pt !important;
 	}
 
@@ -334,7 +334,7 @@ header img{
 
 .class-box{
 	border: 1px solid rgba(255,255,255,0);
-	margin: 2vh 1vw;
+	/*margin: 2vh 1vw;*/
     padding: 1.5vh 2vh;
     text-align: center;
 
