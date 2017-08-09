@@ -193,6 +193,7 @@ header img{
 
 	h1{
 		font-size: 10vh !important;
+		margin-top: 40vh !important;
 	}
 
 	h2{
@@ -203,6 +204,10 @@ header img{
 		font-size: 4vh !important;
 	}
 
+	.buttons{
+		margin-top: 12vh !important;
+	}
+
 	.main-buttom{
 		padding: 1.5vh 2vh !important;
 	}
@@ -217,6 +222,11 @@ header img{
 
 	.class-box{
 		padding: 1.5vh 2vh !important;
+		margin: 2vh 1vw !important;
+	}
+
+	.main-button{
+		margin: 2vh 1vw !important;
 	}
 }
 
@@ -226,11 +236,12 @@ header img{
 	}
 
 	#camera{
-		height: 15vh !important;
+		height: 65pt !important;
 	}
 
 	h1{
 		font-size: 40pt !important;
+		margin-top: 150pt !important;
 	}
 
 	h2{
@@ -241,6 +252,10 @@ header img{
 		font-size: 20pt !important;
 	}
 
+	.buttons{
+		margin-top: 20pt !important;
+	}
+
 	.main-buttom{
 		padding: 3pt 5pt !important;
 	}
@@ -255,6 +270,11 @@ header img{
 
 	.class-box{
 		padding: 3pt 5pt !important;
+		margin: 8pt 5pt !important;
+	}
+
+	.main-button{
+		margin: 8pt 5pt !important;
 	}
 }
 
@@ -274,7 +294,7 @@ header img{
 		text-align: center;
 		display: block;
 		margin: 0 auto;
-		margin-bottom: 5vh;
+		margin-bottom: 40pt;
 	}
 }
 
