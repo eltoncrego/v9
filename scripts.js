@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   // array with texts to type in typewriter
   var dataText = [
-    "Developer.", "Designer.", "Photographer.", "Public Speaker.", "Adaptable, Professional.", "Full Site Coming Soon."
+    "Developer.", "Designer.", "Photographer.", "Public Speaker.", "Adaptable, Professional."
   ];
 
   // type one text in the typwriter
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (typeof dataText[i] == "undefined") {
       setTimeout(function() {
         StartTextAnimation(0);
-      }, 400000);
+      }, 4000);
     }
     // check if dataText[i] exists
     if (i < dataText[i].length) {
@@ -42,3 +42,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // start the text animation
   StartTextAnimation(0);
 });
+
+function hover(element) {
+    element.setAttribute('src', 'resources/iconography/github-blue.svg');
+}
+function unhover(element) {
+    element.setAttribute('src', 'resources/iconography/github-white.svg');
+}

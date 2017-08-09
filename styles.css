@@ -1,50 +1,113 @@
-html{
-	background-image: url(resources/images/seattle_main.jpg);
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-}
-
-body{
+body {
 	font-family: 'Dosis', sans-serif;
 	font-weight: 200;
 	text-align: center;
-	color: #fff;
-}
-
-.container{
-  box-shadow: 0px 0px 500px 500px rgba(58, 64, 90, 0.6);
-  background: rgba(58, 64, 90, 0.6);
+	color: #000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px
 }
 
 h1{
 	font-family: 'Anton', sans-serif;
 	font-weight: 500;
 	font-size: 10vh;
-	line-height: 1vh;
-	margin-top: 40vh;
+	margin-top: 25vh;
+	margin-bottom: 0;
+	z-index: 1;
+	color: white;
 }
 
-p{
+h2{
+	font-family: 'Anton', sans-serif;
+	font-weight: 500;
+	font-size: 6vh;
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+p {
+	color: #fff;
 	font-size: 4vh;
+	z-index: 1;
 }
 
-.resume-button{
-	background-color: rgba(255, 255, 255, 0.2);
+header{
+	display: table;
+	position: relative;
+ 	width: 100%;
+ 	height: 100vh;
+	background: #BAA898;
+	z-index: 2;
+	flex-flow: column;
+}
+
+.buttons{
+	margin-top: 12vh;
+}
+
+.main-button{
+	background-color: rgba(255, 255, 255, 0);
 	font-family: 'Dosis', sans-serif;
     border: 1px solid white;
     color: white;
-    margin-top: 12vh;
+    margin: 2vh 1vw;
     padding: 1.5vh 2vh;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 3vh;
-    border-radius: 2vh;
     cursor: pointer;
+
+	-webkit-transition: background-color 0.5s ease-in-out; 
+	-moz-transition: background-color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
+.main-button:hover{
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+}
+
+#linkedin{
+	-webkit-transition: color 0.5s ease-in-out; 
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+#email{
+	-webkit-transition: color 0.5s ease-in-out; 
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+#github{
+	-webkit-transition: color 0.5s ease-in-out; 
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+#linkedin:hover{
+	color: #007EBB;
+}
+
+#github:hover{
+	color: #3E75C3;
+}
+
+#email:hover{
+	color: #F93F2D;
+}
+
+/* Handles the cursor animation
+ * - The span is the curor
+ * - Keyframes are used to animate the blinking
+ */
 span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
@@ -54,4 +117,154 @@ span {
   50% {
     border-color: transparent;
   }
+}
+
+header img{
+	position: absolute;
+	height: 20vh;
+}
+
+#backpack{
+	top:5vh;
+	left:5vw; 
+	transform: rotate(30deg);
+}
+
+#camera{
+	bottom:5vh;
+	right:5vw;
+	transform: rotate(-18deg);
+
+	-webkit-transition: height 0.2s ease-in-out; 
+	-moz-transition: height 0.2s ease-in-out;
+	-o-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+}
+
+#coffee{
+	top: 40vh;
+	right: 15vw;
+	transform: rotate(15deg);
+}
+
+#diploma_hat{
+	bottom: 30vh;
+	left: 20vw;
+	transform: rotate(-22deg);
+}
+
+#car{
+	top: 5vh;
+	right: 5vw;
+	height: 15vh;
+	transform: rotate(-33deg);
+}
+
+#plane{
+	bottom: 5vh;
+	left: 5vw;
+}
+
+@media screen and (min-width: 860px) {
+	.sketches{
+		display: relative;
+	}	
+
+	#camera{
+		height: 20vh;
+	}
+
+}
+
+@media screen and (max-width: 860px) {
+	.sketches{
+		display: none;
+	}
+
+	#camera{
+		height: 15vh;
+	}
+	
+}
+
+.white-bg-section {
+	padding: 15vh 10vw;
+	text-align: left;
+}
+
+.white-bg-section h2{
+	padding: 0;
+	margin: 0;
+}
+
+.white-bg-section p{
+	color: #000;
+	font-size: 3vh;
+	z-index: 1;
+}
+
+@media screen and (min-width: 575px) {
+    #professional-shot {
+		max-height: 60vh;
+		display: block;
+		float: left;
+		margin-right: 5vw;
+		margin-bottom: 2vh;
+	}
+}
+
+@media screen and (max-width: 575px) {
+    #professional-shot {
+		max-height: 60vh;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5vh;
+	}
+}
+
+.bg-section {
+
+	padding: 10vh 10vw;
+	text-align: left;
+	background: #8896AB;
+	z-index: 2;
+	flex-flow: column;
+}
+
+.bg-section h2{
+	text-align: right;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.bg-section p, li, table{
+	color: #fff;
+	font-size: 3vh;
+	z-index: 1;
+}
+
+.bg-section table{
+	width: 100%;
+}
+
+.class-box{
+	border: 1px solid rgba(255,255,255,0);
+	margin: 2vh 1vw;
+    padding: 1.5vh 2vh;
+    text-align: center;
+
+    -webkit-transition: background-color 0.2s ease-in-out; 
+	-moz-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.class-box:hover{
+	border: 1px solid white;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 1);
+	color: black;
 }
