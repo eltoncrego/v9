@@ -165,28 +165,6 @@ header img{
 	left: 5vw;
 }
 
-@media screen and (min-width: 860px) {
-	.sketches{
-		display: relative;
-	}	
-
-	#camera{
-		height: 20vh;
-	}
-
-}
-
-@media screen and (max-width: 860px) {
-	.sketches{
-		display: none;
-	}
-
-	#camera{
-		height: 15vh;
-	}
-	
-}
-
 .white-bg-section {
 	padding: 15vh 10vw;
 	text-align: left;
@@ -211,6 +189,14 @@ header img{
 		margin-right: 5vw;
 		margin-bottom: 2vh;
 	}
+
+	.sketches{
+		display: relative;
+	}	
+
+	#camera{
+		height: 20vh;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -220,6 +206,14 @@ header img{
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 5vh;
+	}
+
+	.sketches{
+		display: none;
+	}
+
+	#camera{
+		height: 15vh;
 	}
 }
 
