@@ -289,14 +289,8 @@ span {
 
 @media screen and (max-width: 750pt){
 
-	#iphones-left{
-		opacity: 0;
-		transform: translate(0, 20vh);
-	}
-
-	#iphones-right{
-		opacity: 0;
-		transform: translate(0, 10vh);
+	#iphones{
+		display: none;
 	}
 }
 
