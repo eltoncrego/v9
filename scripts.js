@@ -100,4 +100,14 @@ $(document).ready(function(){
           window.location.hash = target;
       });
   });
+
+
+  $('#dot-1').hover( function () {
+        $('#dot-1').toggleClass('animated infinite bounce');
+        $('#dot-2').toggleClass('animated infinite bounce');
+        $('#dot-3').toggleClass('animated infinite bounce');
+  });
+
 });
+
+
