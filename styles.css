@@ -192,7 +192,7 @@ span {
 
 #iphones-left {
 	height: 100%;
-	z-index: 4;
+	z-index: 1;
 	margin-right: 2vw;
 
 	-webkit-transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out; 
@@ -264,10 +264,7 @@ span {
 	color: #fff;
 	font-size: 3vh;
 	border: 1px solid rgba(255,255,255,0);
-<<<<<<< HEAD
-=======
 	margin: 2vh 1vw;
->>>>>>> 32c6ea5db2911671dafce5eb05f4ea09a7c4897e
     padding: 1.5vh 2vh;
     text-align: center;
 
@@ -301,7 +298,6 @@ span {
 		opacity: 0;
 		transform: translate(0, 10vh);
 	}
-
 }
 
 @media screen and (min-width: 350pt) {
