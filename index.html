@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<link rel="shortcut icon" href="resources/iconography/logo.ico"/>
 		<title>Elton C. Rego</title>
     
 		<link rel = "stylesheet" type = "text/css" href = "styles.css" />
+		<script src="jquery-3.2.1.min.js"></script>
 		<script src="scripts.js"></script>
     
 		<link href="https://fonts.googleapis.com/css?family=Anton|Dosis" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
     
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,17 +28,23 @@
 	</head>
 	<body>
 		<div class="pagewrap">
+			<nav id="navbar" class="nav-up">
+				<ul>
+			        <li><a href="#about">About</a></li>
+			        <li><a href="#education">Education</a></li>
+			     </ul>
+			</nav>
 			<header id="top" class="header">
-				<h1>Elton C. Rego</h1>
-				<p class="writer">Adaptable, Professional.</p>
-				<div class=buttons>
-					<button id="linkedin" type="submit" onclick="window.open('https://www.linkedin.com/in/eltoncrego/')" class="main-button">
+				<h1 class="header-card">Elton C. Rego</h1>
+				<p class="writer header-card">Adaptable, Professional.</p>
+				<div class="buttons">
+					<button id="linkedin" type="submit" onclick="window.open('https://www.linkedin.com/in/eltoncrego/')" class="main-button anchor">
 						<i class="fa fa-linkedin"></i>
 					</button>
-					<button id="email" type="submit" onclick="window.open('mailto:rego.elton@gmail.com')" class="main-button">
+					<button id="email" type="submit" onclick="window.open('mailto:rego.elton@gmail.com')" class="main-button not-anchor">
 						<i class="fa fa-envelope"></i>
 					</button>
-					<button id="github" type="submit" onclick="window.open('https://github.com/eltoncrego')" class="main-button">
+					<button id="github" type="submit" onclick="window.open('https://github.com/eltoncrego')" class="main-button not-anchor">
 						<i class="fa fa-github"></i>
 					</button>
 					<br>
@@ -41,10 +52,14 @@
 					</button>
 				</div>
 			</header>
+			<a href="#about"><div id="iphones" class="floating">
+				<img id="iphones-left" src="resources/images/iphones-left.svg">
+				<img id="iphones-right" src="resources/images/iphones-right.svg">
+			</div></a>
 			<div id="about" class="white-bg-section">
 				<img id="professional-shot" src="resources/images/elton-rego-casual.jpg">
 				<h2>My name is Elton Rego</h2>
-				<p>I believe that the best way to learn is by jumping in and getting started and that only through learning from your experiences can you grow both personally and professionally.<br><br>
+				<p>I believe that the best way to learn is by jumping in and getting started and that only through learning from your experiences can you grow both personally and professionally. I am a software development engineer and designer at heart and I see myself working with a comsumer facing technology to drive the industry forward.<br><br>
 
 				I’ve competed and succeeded in public speaking and I believe in the value of communication, accountability, forward progress, and constant improvement in a business. I love making valuable and lasting relationships, working in a team, and actively communicating with the public to promote transparency. I have a passion for technology, personal finance, process improvement, and researching ways I can help the people around me.<br><br>
 
@@ -52,42 +67,31 @@
 			</div>
 			<div id="education" class="bg-section">
 				<h2>Never stop learning</h2>
-				<p>As a 4th year Computer Science and Business Management Economics double major at the University of California, Santa Cruz, I graduate in June of 2018. With course experience in the following topics:</p>
-				<table>
-				  <tr>
-				  	<td><div class="class-box">Algorithm Design and Analysis</div></td>
-				    <td><div class="class-box">Operating Systems</div></td>
-				  </tr>	
-				  <tr>
-				    <td><div class="class-box">Software Development</div></td>
-				    <td><div class="class-box">Computer Architecture</div></td>
-				  </tr>	
-				  <tr>
-				    <td><div class="class-box">Data Representation</div></td>
-				    <td><div class="class-box">Accounting</div></td>
-				  </tr>	
-				  <tr>
-				    <td><div class="class-box">Econometrics and Data Science</div></td>
-				    <td><div class="class-box">Marketing and E-Commerce</div></td>
-				  </tr>	
-				  <tr>
-				  	<td><div class="class-box">Compiler Design</div></td>
-				    <td><div class="class-box">Publishing</div></td>
-				  </tr>	
-				  <tr>
-				    <td><div class="class-box">Computational Models</div></td>
-				    <td><div class="class-box">Data Analytics</div></td>
-				  </tr>	
-				  <tr>
-				    <td><div class="class-box">Managerial Economics</div></td>
-				    <td><div class="class-box">Economic Rhetoric and Writing</div></td>
-				  </tr>
-				  <tr>
-				    <td><div class="class-box">Data Structures</div></td>
-		    		<td><div class="class-box">Project Management</div></td>
-				  </tr>		
-				</table>
-				<p>Although my college career ends soon, I don't plan on stifling my capacity to learn anytime in the near future. In my free time, I am constantly reading, researching, and playing with new technologies and ventures.</p>
+				<p>Although my college career ends soon, I don't plan on stifling my capacity to learn anytime in the near future. In my free time, I am constantly reading, researching, and playing with new technologies and ventures. The coursework I have covered so far has exposed me to all of the following topics:</p>
+				<div class="flex-grid">
+				   <div class="col">
+				   		<div class="class-box">Algorithm Design and Analysis</div>
+				   		<div class="class-box">Operating Systems</div>
+				   		<div class="class-box">Software Development</div>
+						<div class="class-box">Computer Architecture</div>
+						<div class="class-box">Managerial Economics</div>
+				   </div>
+				   <div class="col">
+				   		<div class="class-box">Data Representation</div>
+						<div class="class-box">Accounting</div>
+						<div class="class-box">Econometrics and Data Science</div>
+						<div class="class-box">Marketing and E-Commerce</div>
+						<div class="class-box">Economic Rhetoric and Writing</div>
+				   </div>
+				   <div class="col">
+				   		<div class="class-box">Compiler Design</div>
+						<div class="class-box">Publishing</div>
+						<div class="class-box">Computational Models</div>
+						<div class="class-box">Data Analytics</div>
+						<div class="class-box">Data Structures</div>
+				   </div>
+				</div>
+				<p>As a 4th year Computer Science and Business Management Economics double major at the University of California, Santa Cruz, I graduate in June of 2018.</p>
 			</div>
 		</div>
 	</body>

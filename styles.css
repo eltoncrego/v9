@@ -1,7 +1,11 @@
+/* 
+ * Universal Styles for the Site. 
+ * Handles body, h1, h2, p, a
+ */
+
 body {
 	font-family: 'Dosis', sans-serif;
 	font-weight: 200;
-	text-align: center;
 	color: #000;
 	margin-top: 0px;
 	margin-right: 0px;
@@ -33,26 +37,72 @@ p {
 	z-index: 1;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* 
+ * Handles the styling of the header area (landing page)
+ * header, nav, navigation links
+ */
+
 header{
 	display: table;
 	position: relative;
  	width: 100%;
  	height: 100vh;
-	background: #BAA898;
 	z-index: 2;
 	flex-flow: column;
+	background: #8896AB;
 }
 
-.buttons{
-	margin-top: 12vh;
+nav{
+	width: 100%;
+	text-align: right;
+	position: fixed;
+	z-index: 4;
+	background-color: rgba(0,0,0,0.4);
+	top: 0;
+
+	-webkit-transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out; 
+	-moz-transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
+	-o-transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
+    transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.main-button{
+nav ul{
+	padding: 2vh 2vw;
+}
+
+nav ul li{
+	padding: 0 2vw;
+	display: inline;
+}
+
+.nav-up {
+  	top: -13vh;
+  	opacity: 0;
+}
+
+.nav-down{
+	top:0;
+	opacity: 1;
+}
+
+/* 
+ * Handles the styling of the header buttons 
+ */
+
+.header-card, .buttons{
+	margin-left: 10vw;
+}
+
+.main-button {
 	background-color: rgba(255, 255, 255, 0);
 	font-family: 'Dosis', sans-serif;
     border: 1px solid white;
     color: white;
-    margin: 2vh 1vw;
     padding: 1.5vh 2vh;
     text-align: center;
     text-decoration: none;
@@ -66,41 +116,49 @@ header{
     transition: background-color 0.5s ease-in-out;
 }
 
-.main-button:hover{
+.not-anchor {
+    margin: 2vh 1vh;
+}
+
+.anchor {
+	margin-right: 1vh;
+}
+
+.main-button:hover {
 	background-color: rgba(255, 255, 255, 1);
 	color: black;
 }
 
-#linkedin{
+#linkedin {
 	-webkit-transition: color 0.5s ease-in-out; 
 	-moz-transition: color 0.5s ease-in-out;
 	-o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
 
-#email{
+#email {
 	-webkit-transition: color 0.5s ease-in-out; 
 	-moz-transition: color 0.5s ease-in-out;
 	-o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
 
-#github{
+#github {
 	-webkit-transition: color 0.5s ease-in-out; 
 	-moz-transition: color 0.5s ease-in-out;
 	-o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
 
-#linkedin:hover{
+#linkedin:hover {
 	color: #007EBB;
 }
 
-#github:hover{
+#github:hover {
 	color: #3E75C3;
 }
 
-#email:hover{
+#email:hover {
 	color: #F93F2D;
 }
 
@@ -119,9 +177,38 @@ span {
   }
 }
 
-header img{
+#iphones {
 	position: absolute;
-	height: 20vh;
+	height: 40vh;
+	top: 50%;
+	margin-top: -22vh;
+	right: 10vw;
+	z-index: 3;
+}
+
+#iphones:hover{
+	cursor: url();
+}
+
+#iphones-left {
+	height: 100%;
+	z-index: 4;
+	margin-right: 2vw;
+
+	-webkit-transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out; 
+	-moz-transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+	-o-transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+#iphones-right {
+	height: 80%;
+	z-index: 3;
+
+	-webkit-transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out; 
+	-moz-transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .white-bg-section {
@@ -129,35 +216,16 @@ header img{
 	text-align: left;
 }
 
-.white-bg-section h2{
+.white-bg-section > h2{
+	color: #000;
 	padding: 0;
 	margin: 0;
 }
 
-.white-bg-section p{
+.white-bg-section > p{
 	color: #000;
 	font-size: 3vh;
 	z-index: 1;
-}
-
-@media screen and (min-width: 575px) {
-    #professional-shot {
-		max-height: 60vh;
-		display: block;
-		float: left;
-		margin-right: 5vw;
-		margin-bottom: 2vh;
-	}
-}
-
-@media screen and (max-width: 575px) {
-    #professional-shot {
-		max-height: 300pt;
-		text-align: center;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 40pt;
-	}
 }
 
 .bg-section {
@@ -182,13 +250,21 @@ header img{
 	z-index: 1;
 }
 
-.bg-section table{
-	width: 100%;
+/* Styles the table */
+.flex-grid {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  flex: 1;
 }
 
 .class-box{
+	color: #fff;
+	font-size: 3vh;
 	border: 1px solid rgba(255,255,255,0);
-	/*margin: 2vh 1vw;*/
+	margin: 2vh 1vw;
     padding: 1.5vh 2vh;
     text-align: center;
 
@@ -205,3 +281,106 @@ header img{
     background-color: rgba(255, 255, 255, 1);
 	color: black;
 }
+
+
+/* Responsive Web Design Elements */
+
+
+
+@media screen and (max-width: 750pt){
+
+	#iphones-left{
+		opacity: 0;
+		transform: translate(0, 20vh);
+	}
+
+	#iphones-right{
+		opacity: 0;
+		transform: translate(0, 10vh);
+	}
+
+}
+
+@media screen and (min-width: 350pt) {
+	#professional-shot {
+		max-height: 70vh;
+		display: block;
+		float: left;
+		margin-right: 5vw;
+		margin-bottom: 2vh;
+	}
+}
+
+@media screen and (max-width: 350pt) {
+
+    #professional-shot {
+		display: block;
+		max-height: 60vh;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 40pt;
+	}
+
+	nav{
+		text-align: center;
+	}
+
+	header {
+		text-align: center;
+	}
+
+	.header-card, .buttons{
+		margin-left: 0;
+	}
+
+	.anchor{
+		margin: 2vh 1vh;
+	}
+
+	.nav{
+		position: relative;
+		z-index: 3;
+		margin: 0 auto;
+	}
+
+	.flex-grid {
+	   display: block;
+	}.col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+
+}
+
+@keyframes floating {
+    from { 
+    	-webkit-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	-moz-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	-o-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	transform: translate(0,  0px); 
+    }
+    65%  { 
+    	-webkit-filter: drop-shadow(0px 65px 15px rgba(0,0,0,0.1));
+    	-moz-filter: drop-shadow(0px 65px 15px rgba(0,0,0,0.1));
+    	-o-filter: drop-shadow(0px 65px 15px rgba(0,0,0,0.1));
+    	filter: drop-shadow(0px 65px 15px rgba(0,0,0,0.1));
+    	transform: translate(0, -15px); 
+    }
+    to   { 
+    	-webkit-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	-moz-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	-o-filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	filter: drop-shadow(0px 25px 30px rgba(0,0,0,0.5));
+    	transform: translate(0, -0px); 
+    }    
+}
+
+.floating img{  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.floating img:nth-child(1){ animation-delay: 0.3s }
