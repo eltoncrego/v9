@@ -98,7 +98,6 @@ $(document).ready(function(){
           'scrollTop': $target.offset().top
       }, 300, 'swing', function () {
           window.location.hash = target;
-          $('nav').removeClass('nav-down').addClass("nav-up");
       });
   });
 });

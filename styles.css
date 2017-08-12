@@ -116,6 +116,11 @@ nav ul li{
     transition: background-color 0.5s ease-in-out;
 }
 
+.main-button:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+}
+
 .not-anchor {
     margin: 2vh 1vh;
 }
@@ -124,10 +129,7 @@ nav ul li{
 	margin-right: 1vh;
 }
 
-.main-button:hover {
-	background-color: rgba(255, 255, 255, 1);
-	color: black;
-}
+
 
 #linkedin {
 	-webkit-transition: color 0.5s ease-in-out; 
