@@ -108,7 +108,7 @@ $(document).ready(function(){
         $('#dot-2').toggleClass('animated infinite bounce');
         $('#dot-3').toggleClass('animated infinite bounce');
   });
-
+  
 });
 
 function hideLoader(){
