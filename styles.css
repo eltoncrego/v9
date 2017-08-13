@@ -82,6 +82,11 @@ a {
   -webkit-filter: url(#goo);
           filter: url(#goo);
   box-shadow: 0 0 0 1px #fff inset;
+
+  -webkit-transition: opacity 1s ease-in-out; 
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .loader:before {
   content: "";
@@ -499,4 +504,10 @@ span {
 
 .pagewrap{
   	display: none;
+  	opacity: 0;
+
+  	-webkit-transition: opacity 1s ease-in-out; 
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }

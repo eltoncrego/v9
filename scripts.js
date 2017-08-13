@@ -112,6 +112,8 @@ $(document).ready(function(){
 });
 
 function hideLoader(){
+  $('.loader').css("opacity", "0");
   $('.loader').css("display", "none");
   $('.pagewrap').css("display", "inline");
+  $('.pagewrap').css("opacity", "1");
 }
