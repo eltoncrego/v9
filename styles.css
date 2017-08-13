@@ -416,6 +416,12 @@ span {
 	  height: auto;
 }
 
+#footer {
+	text-align: center;
+	margin: 0 0;
+	padding-bottom: 5vh;
+}
+
 
 /* Responsive Web Design Elements */
 
