@@ -88,6 +88,7 @@ function hasScrolled() {
 
 
 $(document).ready(function(){
+
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
@@ -110,4 +111,7 @@ $(document).ready(function(){
 
 });
 
-
+function hideLoader(){
+  $('.loader').css("display", "none");
+  $('.pagewrap').css("display", "inline");
+}

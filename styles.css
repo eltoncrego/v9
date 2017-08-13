@@ -4,6 +4,7 @@
  */
 
 body {
+	background: #8896AB;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 200;
 	color: #000;
@@ -42,6 +43,62 @@ a {
 	color: #fff;
 }
 
+
+/*Handles all the styles for the cSS preloader*/
+
+@-webkit-keyframes loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.loader {
+  position: absolute;
+  margin: -18px 0 0 -18px;
+  border: 3.6px solid #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  left: 50%;
+  top: 50%;
+  -webkit-animation: loader-spin 2s linear infinite reverse;
+          animation: loader-spin 2s linear infinite reverse;
+  -webkit-filter: url(#goo);
+          filter: url(#goo);
+  box-shadow: 0 0 0 1px #fff inset;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  -webkit-animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+          animation: loader-spin 2s cubic-bezier(0.59, 0.25, 0.4, 0.69) infinite;
+  background: #fff;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  border-radius: 50%;
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: -12.5%;
+}
+
+
 /* 
  * Handles the styling of the header area (landing page)
  * header, nav, navigation links
@@ -54,7 +111,6 @@ header{
  	height: 100vh;
 	z-index: 2;
 	flex-flow: column;
-	background: #8896AB;
 }
 
 nav{
@@ -263,6 +319,7 @@ span {
 /* Post-header styles */
 
 .white-bg-section {
+	background: #fff;
 	padding: 15vh 10vw;
 	text-align: left;
 }
@@ -280,10 +337,8 @@ span {
 }
 
 .bg-section {
-
 	padding: 10vh 10vw;
 	text-align: left;
-	background: #8896AB;
 	z-index: 2;
 	flex-flow: column;
 }
@@ -441,3 +496,7 @@ span {
 }
 
 .floating img:nth-child(1){ animation-delay: 0.3s }
+
+.pagewrap{
+  	display: none;
+}
