@@ -416,12 +416,18 @@ span {
 	  height: auto;
 }
 
+
+.project-information{
+	background: #8896AB;
+	color: #fff;
+	padding: 2vh 2vw;
+}
+
 #footer {
 	text-align: center;
 	margin: 0 0;
 	padding-bottom: 5vh;
 }
-
 
 /* Responsive Web Design Elements */
 
