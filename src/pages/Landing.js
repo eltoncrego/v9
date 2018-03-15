@@ -10,6 +10,10 @@ class Landing extends Component {
     this.animateIn();
   }
 
+  componentWillUnmount(){
+    this.animateOut();
+  }
+
   animateIn() {
     var logo = ReactDOM.findDOMNode(this.refs.logo);
     var links = ReactDOM.findDOMNode(this.refs.links);
@@ -32,6 +36,31 @@ class Landing extends Component {
       links.style.transform = "translateY(0pt)";
   		content.style.opacity = 1;
       content.style.transform = "translateY(0pt)";
+  	});
+  }
+
+  animateOut(){
+    var logo = ReactDOM.findDOMNode(this.refs.logo);
+    var links = ReactDOM.findDOMNode(this.refs.links);
+  	var content = ReactDOM.findDOMNode(this.refs.content);
+    logo.style.opacity = 1;
+    logo.style.transform = "translateY(0pt)";
+    links.style.opacity = 1;
+    links.style.transform = "translateY(0pt)";
+  	content.style.opacity = 1;
+    content.style.transform = "translateY(0pt)";
+  	window.requestAnimationFrame(function() {
+      logo.style.transition = "all 500ms ease-in-out";
+      links.style.transition = "all 500ms ease-in-out";
+  		content.style.transition = "all 500ms ease-in-out";
+      links.style.transitionDelay = "250ms";
+      content.style.transitionDelay = "250ms";
+      logo.style.opacity = 0;
+      logo.style.transform = "translateY(-32pt)";
+      links.style.opacity = 0;
+      links.style.transform = "translateY(-32pt)";
+  		content.style.opacity = 0;
+      content.style.transform = "translateY(-32pt)";
   	});
   }
 
