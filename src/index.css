@@ -6,8 +6,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin: 0;
-  padding: 32pt 200pt;
+  padding: 0pt 200pt;
   color: var(--black);
   font-family: 'Noto Sans', sans-serif;
 }
@@ -18,6 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 32pt;
 }
 
 .content {
@@ -32,9 +36,27 @@ body {
 
 .site-logo{
   width: 32pt;
+  cursor: pointer;
 }
 
 
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-links ul li a{
+  text-decoration: none;
+  margin: 8pt;
+
+  transition: color 300ms, opacity 300ms ease-in-out;
+}
+
+.nav-links ul li a:hover{
+  color: var(--blue);
+  opacity: 1;
+}
 
 /* Display Text Styles */
 
