@@ -8,8 +8,6 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   flex: 1;
-
-  background: #FAFFFD;
 }
 
 .main-content {
@@ -110,7 +108,7 @@ ul {
 }
 
 .role {
-  margin: 16pt 0;
+  margin: 48pt 0 0 0;
 }
 
 .role p {
@@ -137,6 +135,27 @@ ul {
 .exp {
   font-size: 75%;
   text-transform: uppercase;
+}
+
+.exp-tags-top {
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exp-tags-top li {
+  padding: 0 8pt;
+  margin: 2pt;
+  border: 1px solid #3D3B3C;
+  border-radius: 2pt;
+  color: #3D3B3C;
+}
+
+.exp-tags-top li p.exp{
+  font-size: 10%;
 }
 
 .fade-in {
