@@ -161,4 +161,8 @@ ul {
   .button-list {
     width: 40%;
   }
+
+  .button-list {
+    width: 75%;
+  }
 }

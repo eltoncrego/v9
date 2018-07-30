@@ -168,4 +168,8 @@ p {
     width: calc(100% - 64pt);
     background-color: rgba(13,10,11,0.8);
   }
+
+  .button-list {
+    width: 75%;
+  }
 }
