@@ -112,3 +112,11 @@ p {
 .slide-out {
   transform: translateY(-15vh);
 }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    width: calc(100% - 64pt);
+    height: 100%;
+    justify-content: center;
+  }
+}
