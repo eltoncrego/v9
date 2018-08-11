@@ -115,6 +115,11 @@ ul {
   margin: 0;
 }
 
+.experience-logo {
+  height: 32pt;
+  padding-bottom: 8pt;
+}
+
 .exp-tags {
   padding: 0;
   list-style: none;
