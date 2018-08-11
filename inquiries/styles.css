@@ -101,18 +101,6 @@ p {
 }
 
 
-.fade-in {
-  opacity: 1;
-}
-
-.slide-in {
-  transform: translateY(0);
-}
-
-.slide-out {
-  transform: translateY(-15vh);
-}
-
 @media only screen and (max-width: 768px) {
   .hero {
     width: calc(100% - 64pt);
@@ -123,4 +111,16 @@ p {
   .button-list {
     width: 75%;
   }
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.slide-in {
+  transform: translateY(0);
+}
+
+.slide-out {
+  transform: translateY(-15vh);
 }
