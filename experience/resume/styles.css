@@ -10,24 +10,6 @@ html, body {
   flex: 1;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-image: url('./../src/img/exp.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-
-  opacity: 0;
-  transition: 1000ms ease-in-out;
-}
-
 .main-content {
   width: 100vw;
 
@@ -45,32 +27,28 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
+
+  transform: translateY(15vh);
+  opacity: 0;
+  transition: 500ms ease;
 }
 
 h1 {
-  color: #FAFFFD;
+  color: #3D3B3C;
   font-family: 'TimesNewRoman';
   font-weight: normal;
   font-size: 400%;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
-  transform: translateY(15vh);
-  opacity: 0;
-  transition: 500ms ease;
 }
 
 h3 {
   font-family: 'Avenir';
-  color: #FAFFFD;
+  color: #3D3B3C;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
-  transform: translateY(15vh);
-  opacity: 0;
-  transition: 500ms ease;
 }
 
 h4 {
@@ -81,14 +59,18 @@ h4 {
   padding: 0;
 }
 
+h5 {
+  font-family: 'Avenir';
+  color: #3D3B3C;
+  text-transform: uppercase;
+  margin: 8pt 0 0 0;
+  padding: 0;
+}
+
 p {
   font-family: 'Avenir';
-  color: #FAFFFD;
+  color: #3D3B3C;
   font-weight: normal;
-
-  transform: translateY(15vh);
-  opacity: 0;
-  transition: 500ms ease;
 }
 
 ul {
@@ -98,11 +80,7 @@ ul {
 
 .button-list {
   padding-top: 16pt;
-  width: 30%;
-
-  transform: translateY(15vh);
-  opacity: 0;
-  transition: 500ms ease;
+  width: 22%;
 }
 
 .hero-button {
@@ -111,8 +89,8 @@ ul {
   padding: 8pt 16pt;
   border-radius: 4pt;
   background: transparent;
-  border: 1px solid #FAFFFD;
-  color: #FAFFFD;
+  border: 1px solid #3D3B3C;
+  color: #3D3B3C;
   font-family: 'Avenir';
   font-weight: bold;
   font-size: 80%;
@@ -124,9 +102,9 @@ ul {
 
 .hero-button:hover {
   cursor: pointer;
-  background: #FAFFFD;
-  border: 1px solid #FAFFFD;
-  color: #3D3B3C;
+  background: #3D3B3C;
+  border: 1px solid #3D3B3C;
+  color: #FAFFFD;
 }
 
 .role {

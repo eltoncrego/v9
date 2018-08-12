@@ -12,6 +12,24 @@ html, body {
   background: #FAFFFD;
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./../src/img/biz.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  opacity: 0;
+  transition: 1000ms ease-in-out;
+}
+
 .main-content {
   height: 100vh;
   width: 100vw;
@@ -33,7 +51,7 @@ html, body {
 }
 
 h1 {
-  color: #3D3B3C;
+  color: #FAFFFD;
   font-family: 'TimesNewRoman';
   font-weight: normal;
   font-size: 400%;
@@ -48,7 +66,7 @@ h1 {
 
 h3 {
   font-family: 'Avenir';
-  color: #3D3B3C;
+  color: #FAFFFD;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -60,7 +78,7 @@ h3 {
 
 p {
   font-family: 'Avenir';
-  color: #3D3B3C;
+  color: #FAFFFD;
   font-weight: normal;
 
   transform: translateY(15vh);
@@ -82,8 +100,8 @@ p {
   padding: 8pt 16pt;
   border-radius: 4pt;
   background: transparent;
-  border: 1px solid #3D3B3C;
-  color: #3D3B3C;
+  border: 1px solid #FAFFFD;
+  color: #FAFFFD;
   font-family: 'Avenir';
   font-weight: bold;
   font-size: 80%;
@@ -95,9 +113,9 @@ p {
 
 .hero-button:hover {
   cursor: pointer;
-  background: #3D3B3C;
-  border: 1px solid #3D3B3C;
-  color: #FAFFFD;
+  background: #FAFFFD;
+  border: 1px solid #FAFFFD;
+  color: #3D3B3C;
 }
 
 

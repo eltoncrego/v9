@@ -42,5 +42,5 @@ function navigateTo(page) {
     } else {
       window.location.href = page + '/index.html';
     }
-  }, 1000);
+  }, 500);
 }
