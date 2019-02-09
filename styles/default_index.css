@@ -57,6 +57,7 @@ p {
 
 .hero {
   align-self: center;
+  width: 50%;
   height: 100%;
   padding: 32pt;
   display: flex;
@@ -99,7 +100,7 @@ p {
   }
 
   h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
 
   h3 {
