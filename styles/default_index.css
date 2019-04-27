@@ -1,8 +1,3 @@
-@font-face {
-  font-family: TimesNewRoman;
-  src: url('./src/fonts/Times New Roman.ttf');
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -20,16 +15,16 @@ html, body {
 
 h1 {
   color: #000000;
-  font-family: 'TimesNewRoman';
-  font-weight: normal;
-  font-size: 400%;
+  font-family: 'Lato', sans-serif;
+  font-weight: medium;
   text-transform: uppercase;
+  font-size: 320%;
   margin: 0;
   padding: 0;
 }
 
 h3 {
-  font-family: 'Avenir';
+  font-family: 'Lato', sans-serif;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
@@ -37,7 +32,7 @@ h3 {
 }
 
 p {
-  font-family: 'Avenir';
+  font-family: 'Lato', sans-serif;
   color: #000000;
   font-weight: normal;
   text-align: center;
