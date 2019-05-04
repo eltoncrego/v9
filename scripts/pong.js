@@ -2,73 +2,73 @@ var cxv = 15 * (Math.random() < 0.5 ? -1 : 1);
 var cyv = 4 * (Math.random() < 0.5 ? -1 : 1);
 var numLosses = 0;
 
-window.onload = function() {
-  // Basic setup
-  canvas = document.getElementById('pong');
-  cxt = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  // Game settings
-  var fps = 60;
-  var state = {
-    bgColor: '#000000',
-    ball: {
-      x: canvas.width/2-8,
-      y: canvas.height/2-8,
-      color: '#FFFFFF',
-      radius: 8,
-      xVelocity : cxv,
-      yVelocity : cyv
-    },
-    player: {
-      x: 0,
-      y: canvas.height/2 - 100,
-      width: 8,
-      height: 128,
-      color: '#FFFFFF',
-    },
-    ai: {
-      x: canvas.width-8,
-      y: canvas.height/2 - 100,
-      width: 8,
-      height: 128,
-      color: '#FFFFFF',
-      yVelocity: 20,
-    },
-    paused: false
-  };
-
-  // Set up controls
-  window.addEventListener('mousemove', function(event) {
-    if (!state.paused){
-      var mousePosition = calculateMousePosition(event);
-      state.player.y = mousePosition.y-64;
-    }
-  });
-
-  window.addEventListener('click', function(event) {
-    togglePause(state);
-  });
-
-  // Game begins here
-  draw(state);
-  setInterval(function() {
-    state.ball.x += state.ball.xVelocity;
-    state.ball.y += state.ball.yVelocity;
-    state.ai.y += state.ball.yVelocity;
-    if (numLosses > 1){
-      document.getElementById('shamer').innerHTML = "You've already lost " + numLosses + " times...";
-    }
-    if (numLosses > 15){
-      document.getElementById('super-shamer').innerHTML = "You're still playing? I admire your perserverance, but you gotta know when to stop.";
-    }
-    if (numLosses > 20){
-      document.getElementById('super-shamer').innerHTML += " Alright I guess. I just want you to know you can click to pause the game.";
-    }
-    draw(state);
-  }, 1000/fps);
-}
+// window.onload = function() {
+//   // Basic setup
+//   canvas = document.getElementById('pong');
+//   cxt = canvas.getContext('2d');
+//   canvas.width = window.innerWidth;
+//   canvas.height = window.innerHeight;
+//
+//   // Game settings
+//   var fps = 60;
+//   var state = {
+//     bgColor: '#06AED5',
+//     ball: {
+//       x: canvas.width/2-8,
+//       y: canvas.height/2-8,
+//       color: '#DD1C1A',
+//       radius: 8,
+//       xVelocity : cxv,
+//       yVelocity : cyv
+//     },
+//     player: {
+//       x: 0,
+//       y: canvas.height/2 - 100,
+//       width: 8,
+//       height: 128,
+//       color: '#F0C808',
+//     },
+//     ai: {
+//       x: canvas.width-8,
+//       y: canvas.height/2 - 100,
+//       width: 8,
+//       height: 128,
+//       color: '#F0C808',
+//       yVelocity: 20,
+//     },
+//     paused: false
+//   };
+//
+//   // Set up controls
+//   window.addEventListener('mousemove', function(event) {
+//     if (!state.paused){
+//       var mousePosition = calculateMousePosition(event);
+//       state.player.y = mousePosition.y-64;
+//     }
+//   });
+//
+//   window.addEventListener('click', function(event) {
+//     togglePause(state);
+//   });
+//
+//   // Game begins here
+//   draw(state);
+//   setInterval(function() {
+//     state.ball.x += state.ball.xVelocity;
+//     state.ball.y += state.ball.yVelocity;
+//     state.ai.y += state.ball.yVelocity;
+//     if (numLosses > 1){
+//       document.getElementById('shamer').innerHTML = "You've already lost " + numLosses + " times...";
+//     }
+//     if (numLosses > 15){
+//       document.getElementById('super-shamer').innerHTML = "You're still playing? I admire your perserverance, but you gotta know when to stop.";
+//     }
+//     if (numLosses > 20){
+//       document.getElementById('super-shamer').innerHTML += " Alright I guess. I just want you to know you can click to pause the game.";
+//     }
+//     draw(state);
+//   }, 1000/fps);
+// }
 
 function draw(state) {
   drawRectangle(0, 0, canvas.width, canvas.height, state.bgColor);
@@ -156,7 +156,7 @@ function resetGame(state) {
     y: canvas.height/2 - 100,
     width: 8,
     height: 128,
-    color: '#FFFFFF',
+    color: '#F0C808',
     yVelocity: 20,
   };
 }

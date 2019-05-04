@@ -1,13 +1,8 @@
-/*
-Background-Black : #000000
-Main-Color-Red: #E71D36
-Text-OnBlac: #FFFFFF a0.4
-*/
-
 html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #EFE7DA;
 }
 
 #pong {
@@ -30,13 +25,14 @@ html, body {
 }
 
 h1 {
-  color: #C3073F;
-  font-family: 'Poppins', sans-serif;
+  color: #2C2C34;
+  font-family: 'Rozha One', serif;
   font-size: 320%;
   margin: 0;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
-  color: #FFFFFF;
+  color: #2C2C34;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
 }
