@@ -29,10 +29,12 @@ h1 {
   font-family: 'Rozha One', serif;
   font-size: 320%;
   margin: 0;
+  text-align: left;
 }
 
 p {
   color: #2C2C34;
   font-family: 'Playfair Display', serif;
   margin: 0;
+  text-align: left;
 }
