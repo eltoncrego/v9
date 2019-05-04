@@ -5,14 +5,6 @@ html, body {
   background-color: #EFE7DA;
 }
 
-#pong {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
 .page {
   padding: 64px 64px;
 }
@@ -21,20 +13,17 @@ html, body {
   width: 35vw;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+#pong {
+  margin: 32px 0;
+  border: 8px solid #2C2C34;
 }
 
 #logo {
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 32px;
   height: 32px;
-  z-index: 0;
-  opacity: 0.2;
+  bottom: 0;
+  right: 0;
   padding: 32px;
 }
 
@@ -54,6 +43,10 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+  #pong {
+    display: none;
+  }
+
   .page {
     padding: 16px 32px;
   }

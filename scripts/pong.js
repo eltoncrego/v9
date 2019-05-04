@@ -1,4 +1,4 @@
-var cxv = 15 * (Math.random() < 0.5 ? -1 : 1);
+var cxv = 10 * (Math.random() < 0.5 ? -1 : 1);
 var cyv = 4 * (Math.random() < 0.5 ? -1 : 1);
 var numLosses = 0;
 
@@ -6,8 +6,8 @@ window.onload = function() {
   // Basic setup
   canvas = document.getElementById('pong');
   cxt = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth * 0.45;
+  canvas.height = canvas.width * 0.65;
 
   // Game settings
   var fps = 60;
