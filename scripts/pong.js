@@ -1,5 +1,6 @@
 var cxv = 15 * (Math.random() < 0.5 ? -1 : 1);
 var cyv = 4 * (Math.random() < 0.5 ? -1 : 1);
+var numLosses = 0;
 
 window.onload = function() {
   // Basic setup
@@ -56,6 +57,15 @@ window.onload = function() {
     state.ball.x += state.ball.xVelocity;
     state.ball.y += state.ball.yVelocity;
     state.ai.y += state.ball.yVelocity;
+    if (numLosses > 1){
+      document.getElementById('shamer').innerHTML = "You've already lost " + numLosses + " times...";
+    }
+    if (numLosses > 15){
+      document.getElementById('super-shamer').innerHTML = "You're still playing? I admire your perserverance, but you gotta know when to stop.";
+    }
+    if (numLosses > 20){
+      document.getElementById('super-shamer').innerHTML += " Alright I guess. I just want you to know you can click to pause the game.";
+    }
     draw(state);
   }, 1000/fps);
 }
@@ -84,6 +94,7 @@ function checkBallHitBox(ball, state) {
     } else {
       // reset ball on loss
       resetGame(state);
+      numLosses += 1;
     }
   }
   if (ball.x >= canvas.width-4-ball.radius) {
