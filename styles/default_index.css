@@ -10,18 +10,32 @@ html, body {
   z-index: -1;
   top: 0;
   left: 0;
-}
-
-#controller {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  display: none;
 }
 
 .page {
-  padding: 16px 32px;
+  padding: 64px 64px;
+}
+
+.desc {
+  width: 50vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  z-index: 0;
+  opacity: 0.2;
+  padding: 32px;
 }
 
 h1 {
@@ -37,4 +51,14 @@ p {
   font-family: 'Playfair Display', serif;
   margin: 0;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .page {
+    padding: 16px 32px;
+  }
+
+  .desc {
+    width: 100%;
+  }
 }
