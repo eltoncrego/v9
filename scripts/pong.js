@@ -16,7 +16,7 @@ window.onload = function() {
     ball: {
       x: canvas.width/2-8,
       y: canvas.height/2-8,
-      color: '#FFFFFF',
+      color: '#950740',
       radius: 8,
       xVelocity : cxv,
       yVelocity : cyv
@@ -26,14 +26,14 @@ window.onload = function() {
       y: canvas.height/2 - 100,
       width: 8,
       height: 128,
-      color: '#FFFFFF',
+      color: '#6f2232',
     },
     ai: {
       x: canvas.width-8,
       y: canvas.height/2 - 100,
       width: 8,
       height: 128,
-      color: '#FFFFFF',
+      color: '#6f2232',
       yVelocity: 20,
     },
     paused: false
@@ -156,7 +156,7 @@ function resetGame(state) {
     y: canvas.height/2 - 100,
     width: 8,
     height: 128,
-    color: '#FFFFFF',
+    color: '#6f2232',
     yVelocity: 20,
   };
 }
