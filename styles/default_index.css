@@ -54,6 +54,8 @@ p {
   font-size: 12pt;
   text-decoration: none;
   color: #FFFFFF;
+
+  transition: color 300ms ease-in-out;
 }
 
 .navbar__links a:hover {
@@ -78,6 +80,9 @@ p {
   flex-direction: column;
   color: #2C2C34;
   padding: 0 32px;
+
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
 }
 
 .hello {
