@@ -22,9 +22,18 @@ h1, h2, h3, h4, h5, .lead {
   color: #8C8B8A;
 }
 
-#site-logo {
+.site-logo {
   height: 64px;
   margin: 32px 0;
+}
+
+.site-logo g > g {
+  transition: fill 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.site-logo:hover g > g {
+  fill: #FCD0A1;
 }
 
 .hero {
