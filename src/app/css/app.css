@@ -8,8 +8,11 @@ body {
   margin: 0;
   display: block;
   background-color: #F0F0F0;
+  background-image: url('src/assets/img/bg-main.svg');
+  background-size: cover;
   font-family: 'Open Sans', sans-serif;
   color: #191716;
+  font-size: 12pt;
 }
 
 h1, h2, h3, h4, h5, .lead {
@@ -18,8 +21,23 @@ h1, h2, h3, h4, h5, .lead {
   margin: 0;
 }
 
+.lead-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  padding: 0;
+  margin: 0;
+}
+
+.small {
+  font-size: 10pt;
+}
+
 .tiny {
-  font-size: 8.1pt;
+  font-size: 8pt;
+}
+
+.white {
+  color: #FFFFFF;
 }
 
 .gray {
