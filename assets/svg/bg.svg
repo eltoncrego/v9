@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="2319px" height="580px" viewBox="0 0 2319 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2319px" height="800px" viewBox="0 0 2319 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
     <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Water-Animation" transform="translate(0.000000, -444.000000)" fill="#FFFFFF">
-            <path d="M2319,661 L2319,1024 L0,1024 L0,661 L0,502.717148 C171.016084,463.572383 387.608622,444 649.777615,444 C1043.0311,444 1349.23617,519.142016 1497.852,534.370734 C1646.46783,549.599453 1905.24533,554.447234 2029.11047,544.408984 C2111.68722,537.716818 2208.31707,523.81891 2319,502.715262 L2319,661 Z" id="Combined-Shape"></path>
+        <g id="Water-Animation" transform="translate(0.000000, -224.000000)" fill="#FFFFFF">
+            <path d="M2319,441 L2319,1024 L0,1024 L0,441 L0,282.717148 C171.016084,243.572383 387.608622,224 649.777615,224 C1043.0311,224 1349.23617,299.142016 1497.852,314.370734 C1646.46783,329.599453 1905.24533,334.447234 2029.11047,324.408984 C2111.68722,317.716818 2208.31707,303.81891 2319,282.715262 L2319,441 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>
