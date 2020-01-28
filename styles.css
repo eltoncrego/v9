@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #F0F0F0;
+  background-color: #FCD0A1;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  color: #191716;
+  color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,13 +31,17 @@ p {
 }
 
 .btn:hover {
-  background-color: #465362;
+  background-color: #FCD0A1;
   color: #FFFFFF;
   cursor: pointer;
 }
 
+.accent {
+  color: #FCD0A1;
+}
+
 .secondary {
-  color: #8C8B8A;
+  opacity: 0.6;
 }
 
 #bg-curve {
@@ -51,7 +55,7 @@ p {
   background-attachment: fixed;
   background-position: bottom right;
   background-repeat: repeat-x;
-  animation: wave 8s linear infinite, rise 2s cubic-bezier(0.25,0.5,0.75,1);
+  animation: wave 8s linear infinite, rise-and-fall 16s ease-in-out infinite;
 }
 
 nav {
@@ -66,9 +70,18 @@ nav {
   transition: margin 300ms ease-in-out;
 }
 
-#site-logo {
+#site-logo-svg {
   width: 32px;
   height: 32px;
+}
+
+#logo-main {
+  fill: #465362;
+}
+
+#site-logo:hover #logo-main {
+  cursor: pointer;
+  fill: #FCD0A1;
 }
 
 #content {
@@ -96,17 +109,18 @@ nav {
 .hero-links {
   height: 100%;
   margin-right: 16px;
-  border-right: 1px solid #465362;
+  border-right: 1px solid #FCD0A1;
   display: flex;
   flex-direction: column;
 }
 
 .hero-links > .btn > a {
   text-decoration: none;
-  color: #191716;
+  color: #FFFFFF;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .hero-links > .btn > a > i {
@@ -114,7 +128,11 @@ nav {
 }
 
 .hero-links > .btn:hover a {
-  color: #FFFFFF;
+  color: #465362;
+}
+
+.hero-links > .btn:hover i {
+  color: #465362;
 }
 
 @media only screen and (max-width: 816px) {
@@ -141,7 +159,11 @@ nav {
     margin: 0;
     margin-top: 16px;
     border: none;
-    border-left: 1px solid #465362
+    border-left: 1px solid #FCD0A1;
+  }
+
+  .hero-links > .btn > a {
+    justify-content: flex-start;
   }
 }
 
@@ -155,13 +177,14 @@ nav {
   }
 }
 
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(40%);
+@keyframes rise-and-fall {
+  0% {
+    transform: translateY(10%);
   }
-  to {
-    opacity: 1;
+  50% {
     transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(10%);
   }
 }
