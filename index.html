@@ -15,7 +15,7 @@
     <script src="index.js"></script>
 	</head>
 	<body>
-    <div id="bg-curve"></div>
+    <div class="bg__curve"></div>
     <nav>
       <div id="site-logo">
         <svg id="site-logo-svg" width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -26,25 +26,42 @@
           </g>
         </svg>
       </div>
+      <div>
+        <ul id="nav-links">
+          <li><div class="nav-link-btn" id="link-aboutMe"><a class="nav-link" href="">About Me</a></div></li>
+          <li><div class="nav-link-btn" id="link-projects"><a class="nav-link" href="">What I've Done</a></div></li>
+          <li><div class="nav-link-btn target" id="link-contact" href="mailto:rego.elton+portfolio@gmail.com"><a class="nav-link">Contact Me</a></div></li>
+        </ul>
+        <div id="ham"></div>
+      </div>
     </nav>
+    <div id="mobile-nav">
+      <!-- TODO: place nav links here -->
+    </div>
+    <div class="content__overlay"></div>
     <div id="content">
-      <div id="welcome">
-        <div class="hero-links">
-          <div class="btn">
-            <a href="https://www.linkedin.com/in/eltoncrego/"><i class="fab fa-linkedin-in"></i></i>LinkedIn</a>
+      <div id="welcome-page">
+        <div id="welcome">
+          <div class="hero-links">
+            <div id="link-linkedin" class="btn" href="https://www.linkedin.com/in/eltoncrego/">
+              <!-- <a href="https://www.linkedin.com/in/eltoncrego/"></a> -->
+              <i class="fab fa-linkedin-in"></i>LinkedIn
+            </div>
+            <div id="link-github" class="btn" href="https://github.com/eltoncrego">
+              <!-- <a href="https://github.com/eltoncrego"></a> -->
+                <i class="fab fa-github"></i>GitHub
+            </div>
+            <div id="link-resume" class="btn" href="assets/docs/ECR_Resume_EXPORT.pdf">
+              <!-- <a href="assets/docs/ECR_Resume_EXPORT.pdf"></a> -->
+                <i class="fas fa-file-pdf"></i>Resume
+            </div>
           </div>
-          <div class="btn">
-            <a href="https://github.com/eltoncrego"><i class="fab fa-github"></i>GitHub</a>
+          <div class="welcome-text">
+            <p class="accent">👋🏽 Hello there, I’m</p>
+            <h1>Elton Christopher Rego</h1>
+            <h2 class="secondary">I make stuff on the web look good.</h2>
+            <p>I'm a software engineer based in the Bay Area of California. I specialize in implementing beautiful UI designs and occaisionally doing the design work myself.</p>
           </div>
-          <div class="btn">
-            <a href="assets/docs/ECR_Resume_EXPORT.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
-          </div>
-        </div>
-        <div class="welcome-text">
-          <p class="accent">👋🏽Hello there, I’m</p>
-          <h1>Elton Christopher Rego</h1>
-          <h2 class="secondary">I make stuff on the web look good.</h2>
-          <p>I'm a software engineer based in the Bay Area of California. I specialize in implementing beautiful UI designs and occaisionally doing the design work myself.</p>
         </div>
       </div>
     </div>
