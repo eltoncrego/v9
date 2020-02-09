@@ -1,0 +1,24 @@
+.site-logo {
+  width: 64px;
+  height: 52px;
+  opacity: 0;
+
+  transition: opacity 1000ms ease-in-out;
+}
+
+.site-logo--active {
+  opacity: 1;
+}
+
+.site-logo .site-logo__layers > .site-logo__base-fill {
+  transition: all 200ms ease-in-out;
+}
+
+.site-logo:hover {
+  cursor: pointer;
+}
+
+.site-logo:hover .site-logo__layers > .site-logo__base-fill {
+  transform: translateY(6px);
+  fill: var(--dark-accent);
+}

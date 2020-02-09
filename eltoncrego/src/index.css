@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Calibre';
+  src: local('CalibreRegular') url('./assets/fonts/CalibreRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('CalibreBold') url('./assets/fonts/CalibreBold.woff') format('woff');
+  font-weight: bold;
+}
+
+:root {
+  --main-brand-color: #ACB5B6;
+  --light-shade: #FAF9F9;
+  --light-accent: #B39662;
+  --dark-shade: #4A4B4F;
+  --dark-accent: #BB7B4E;
+  --super-dark--shade: #373737;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--super-dark--shade);
+
+  display: flex;
+  font-family: 'Calibre';
+  color: var(--light-shade);
+}
+
+body {
+  flex: 1;
+  padding: 32px;
+
+  display: flex;
+
+  transition: padding 300ms ease-in-out;
+}
+
+#site-root {
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+}
