@@ -35,8 +35,6 @@ body {
   padding: 32px;
 
   display: flex;
-
-  transition: padding 300ms ease-in-out;
 }
 
 #site-root {
