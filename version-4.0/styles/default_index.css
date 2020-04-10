@@ -1,0 +1,133 @@
+@font-face {
+  font-family: TimesNewRoman;
+  src: url('./src/fonts/Times New Roman.ttf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+
+  background: #FAFFFD;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'TimesNewRoman';
+  font-weight: normal;
+  font-size: 400%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  transform: translateY(15vh);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+h3 {
+  font-family: 'Avenir';
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  transform: translateY(15vh);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+p {
+  font-family: 'Avenir';
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+
+  transform: translateY(15vh);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.hero {
+  align-self: center;
+  width: 50%;
+  height: 100%;
+  padding: 32pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin: 16pt 0;
+
+  transform: translateY(15vh);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.social-icon {
+  color: #000000;
+  font-size: 150%;
+  padding: 0 8pt;
+
+  transition: 250ms ease-in-out;
+}
+
+.social-icon:hover {
+  cursor: pointer;
+  color: #3D5467;
+}
+
+@media only screen and (max-width: 768px) {
+
+  html, body {
+    justify-content: center;
+  }
+
+  .hero {
+    width: calc(100% - 64pt);
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  h3 {
+    font-size: 85%;
+  }
+
+  p {
+    font-size: 75%;
+  }
+
+  .socials {
+    align-self: center;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.slide-in {
+  transform: translateY(0);
+}
+
+.slide-out {
+  transform: translateY(-15vh);
+}
+
+.orange {
+  color: #FF9800;
+}
