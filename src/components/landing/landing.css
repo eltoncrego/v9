@@ -27,6 +27,7 @@
   .landing {
     justify-content: flex-start;
     padding: 128px var(--content-padding);
+    min-height: 20px;
   }
 
   .landing .text--body {

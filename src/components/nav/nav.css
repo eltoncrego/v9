@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   background-color: var(--dark-shade);
+  box-shadow: var(--box-shadow);
   z-index: 100;
   padding: 8px var(--content-padding);
 
@@ -11,6 +12,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  transition: background-color 300ms ease-in-out,
+              box-shadow 300ms ease-in-out;
+}
+
+.nav--transparent {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .site-logo {
