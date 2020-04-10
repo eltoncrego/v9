@@ -5,6 +5,7 @@
   right: 0;
   background-color: var(--dark-shade);
   height: 80px;
+  z-index: 100;
 }
 
 .site-logo {

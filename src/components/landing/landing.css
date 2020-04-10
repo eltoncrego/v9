@@ -9,9 +9,6 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 152px;
-
-  transition: padding 300ms ease-in-out,
-              height 300ms ease-in-out;
 }
 
 .landing__lead-in {
@@ -24,7 +21,7 @@
 }
 
 .landing .text--body {
-  max-width: 392px;
+  max-width: 450px;
 }
 
 @media only screen and (max-width: 768px) {
