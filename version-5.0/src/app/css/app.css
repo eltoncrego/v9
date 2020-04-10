@@ -1,0 +1,116 @@
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: block;
+  background-color: #F0F0F0;
+  background-image: url('src/assets/img/bg-main.svg');
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color: #191716;
+  font-size: 12pt;
+}
+
+h1, h2, h3, h4, h5, .lead {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.lead-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  padding: 0;
+  margin: 0;
+}
+
+.small {
+  font-size: 10pt;
+}
+
+.tiny {
+  font-size: 8pt;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.gray {
+  color: #8C8B8A;
+}
+
+/* Individual element styles */
+.navbar {
+  padding: 16px 32px;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar.navbar-active {
+  background-color: #465362;
+}
+
+.site-logo {
+  height: 64px;
+  width: 64px;
+}
+
+.site-logo g > g {
+  fill: #465362;
+  transition: fill 300ms ease-in-out;
+}
+
+.site-logo:hover g > g {
+  fill: #FCD0A1;
+}
+
+.site-logo.navbar-active g > g {
+  fill: #FCD0A1;
+  transition: fill 300ms ease-in-out;
+}
+
+.site-logo.navbar-active:hover g > g {
+  fill: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-transform: lowercase;
+  color: #F0F0F0;
+  transition: color 300ms ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FCD0A1;
+}
+
+.nav-item {
+  padding-left: 32px;
+}
+
+.navbar-toggler {
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+  border: none;
+}
+
+.navbar-toggler:focus{
+  outline: 0;
+}
+
+/* Sizing Styles */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 32px 64px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    text-transform: lowercase;
+    color: #8C8B8A;
+    transition: color 300ms ease-in-out;
+  }
+}

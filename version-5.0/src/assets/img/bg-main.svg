@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="758px" viewBox="0 0 1440 758" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Path Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -266.000000)" fill="#FFFFFF">
+            <path d="M0,406 C76.4000805,365.173134 159.463598,333.173134 249.190552,310 C383.780983,275.240299 440.512319,266 542.083496,266 C643.654672,266 655.773019,268.542937 797.233577,298 C938.694135,327.457063 985.545022,355.307123 1066.79164,375.262691 C1148.03827,395.218259 1175.59732,399.648252 1236.94219,406 C1298.28705,412.351748 1323.70433,409.154668 1363.65104,406 C1390.28218,403.896888 1415.73184,398.551601 1440,389.964137 L1440,1024 L0,1024 L0,406 Z" id="Path-Copy"></path>
+        </g>
+    </g>
+</svg>
