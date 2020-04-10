@@ -12,9 +12,18 @@
 
 :root {
   --site-font: 'Calibre';
+  --primary-shade: #F69999;
+  --secondary-shade: #7EBDC2;
+  --tertiary-shade: #E88D67;
+  --dark-shade: #292F36;
+  --grey-shade: #53595D;
+  --light-grey-shade: #747A7C;
+  --error-shade: #B02E0C;
+  --success-shade: #6A8D73;
 }
 
 html, body {
   margin: 0;
   font-family: var(--site-font);
+  color: var(--dark-shade);
 }
