@@ -1,17 +1,16 @@
 
 @font-face {
   font-family: 'Calibre';
-  src: local('CalibreRegular') url('./fonts/CalibreRegular.woff') format('woff');
+  src: local('CalibreRegular') url('./assets/fonts/CalibreRegular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: local('CalibreBold') url('./fonts/CalibreBold.woff') format('woff');
+  src: local('CalibreBold') url('./assets/fonts/CalibreBold.woff') format('woff');
   font-weight: bold;
 }
 
 :root {
-  --site-font: 'Calibre';
   --primary-shade: #F69999;
   --secondary-shade: #7EBDC2;
   --tertiary-shade: #E88D67;
@@ -20,10 +19,19 @@
   --light-grey-shade: #747A7C;
   --error-shade: #B02E0C;
   --success-shade: #6A8D73;
+  --site-font: 'Calibre';
+  --content-padding: 32px;
 }
 
 html, body {
   margin: 0;
   font-family: var(--site-font);
   color: var(--dark-shade);
+}
+
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --content-padding: 16px;
+  }
 }

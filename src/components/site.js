@@ -1,7 +1,10 @@
 import React from 'react';
+import Nav from './nav/nav';
 
 const Site = () => {
-  return (<h1>Hello World!</h1>);
+  return (
+    <Nav></Nav>
+  );
 };
 
 export default Site;
