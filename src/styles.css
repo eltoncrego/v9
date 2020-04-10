@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('CalibreRegular') url('./fonts/CalibreRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('CalibreBold') url('./fonts/CalibreBold.woff') format('woff');
+  font-weight: bold;
+}
+
+:root {
+  --site-font: 'Calibre';
+}
+
+html, body {
+  margin: 0;
+  font-family: var(--site-font);
+}
