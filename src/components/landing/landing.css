@@ -1,6 +1,5 @@
 .landing {
-  margin-top: 80px;
-  min-height: 80vh;
+  min-height: 90vh;
   background-color: var(--secondary-shade);
   color: var(--white-shade);
 
@@ -28,7 +27,6 @@
   .landing {
     justify-content: flex-start;
     padding: 128px var(--content-padding);
-    min-height: 20px;
   }
 
   .landing .text--body {

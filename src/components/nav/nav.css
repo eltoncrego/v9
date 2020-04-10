@@ -4,26 +4,17 @@
   left: 0;
   right: 0;
   background-color: var(--dark-shade);
-  height: 80px;
   z-index: 100;
+  padding: 8px var(--content-padding);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-logo {
-  position: absolute;
-  left: var(--content-padding);
-  width: 120px;
-  height: 120px;
-  background-color: var(--primary-shade);
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: left 300ms ease-in-out;
-}
-
-.site-logo__icon {
-  width: 88px;
-  height: 88px;
-  fill: var(--dark-shade);
+  width: 32px;
+  height: 32px;
+  fill: var(--white-shade);
 }
