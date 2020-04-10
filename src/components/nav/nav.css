@@ -1,0 +1,28 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-shade);
+  height: 80px;
+}
+
+.site-logo {
+  position: absolute;
+  left: var(--content-padding);
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-shade);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: left 300ms ease-in-out;
+}
+
+.site-logo__icon {
+  width: 88px;
+  height: 88px;
+  background-image: url('./../../assets/icons/site-logo--dark-shade.png');
+}
