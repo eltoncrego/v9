@@ -24,5 +24,5 @@
 .site-logo__icon {
   width: 88px;
   height: 88px;
-  background-image: url('./../../assets/icons/site-logo--dark-shade.png');
+  fill: var(--dark-shade);
 }
