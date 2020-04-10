@@ -1,0 +1,40 @@
+.landing {
+  margin-top: 80px;
+  min-height: 80vh;
+  background-color: var(--secondary-shade);
+  color: var(--white-shade);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 152px;
+
+  transition: padding 300ms ease-in-out,
+              height 300ms ease-in-out;
+}
+
+.landing__lead-in {
+  display: flex;
+  align-items: center;
+}
+
+#lead-in__wave-icon {
+  margin-right: var(--item-margin);
+}
+
+.landing .text--body {
+  max-width: 392px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing {
+    justify-content: flex-start;
+    padding: 128px var(--content-padding);
+    min-height: 20px;
+  }
+
+  .landing .text--body {
+    width: 100%;
+  }
+}

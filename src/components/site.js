@@ -1,9 +1,13 @@
 import React from 'react';
 import Nav from './nav/nav';
+import Landing from './landing/landing';
 
 const Site = () => {
   return (
-    <Nav></Nav>
+    <div>
+      <Nav></Nav>
+      <Landing></Landing>
+    </div>
   );
 };
 
