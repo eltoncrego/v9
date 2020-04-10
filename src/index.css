@@ -16,33 +16,10 @@
   --dark-shade: #4A4B4F;
   --dark-accent: #BB7B4E;
   --super-dark--shade: #373737;
+  --site-font: 'Calibre';
 }
 
-html {
-  width: 100%;
-  height: 100vh;
+html, body {
   margin: 0;
-  padding: 0;
-  background-color: var(--super-dark--shade);
-
-  display: flex;
-  font-family: 'Calibre';
-  color: var(--light-shade);
-}
-
-body {
-  flex: 1;
-  padding: 32px;
-
-  display: flex;
-}
-
-#site-root {
-  flex: 1;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    padding: 16px;
-  }
+  font-family: var(--site-font);
 }
