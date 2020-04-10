@@ -6,7 +6,7 @@
   background-color: var(--dark-shade);
   box-shadow: var(--box-shadow);
   z-index: 100;
-  padding: 8px var(--content-padding);
+  padding: 16px var(--content-padding);
 
   display: flex;
   flex-direction: row;
