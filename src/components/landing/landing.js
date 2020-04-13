@@ -13,7 +13,7 @@ const Landing = () => {
           <div className='text--lead'>{LANDING.LEAD_IN}</div>
         </div>
         <div className='text--uber'><b>{LANDING.TITLE}</b></div>
-        <h2 className='text--grey'>{LANDING.SUB_TITLE}</h2>
+        <h2>{LANDING.SUB_TITLE}</h2>
         <div className='text--body'>{LANDING.DESC}</div>
       </div>
     </div>

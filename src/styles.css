@@ -11,15 +11,11 @@
 }
 
 :root {
-  --primary-shade: #F69999;
-  --secondary-shade: #7EBDC2;
-  --tertiary-shade: #E88D67;
-  --dark-shade: #292F36;
-  --grey-shade: #53595D;
-  --light-grey-shade: #747A7C;
-  --error-shade: #B02E0C;
-  --success-shade: #6A8D73;
-  --white-shade: #FFFFFF;
+  --brand-shade: #F45B69;
+  --dark-accent: #C7D9B7;
+  --light-accent: #D7AF70;
+  --dark-shade: #585B56;
+  --light-shade: #FFFFFF;
 
   --site-font: 'Calibre';
   --uber: 32px;
@@ -35,6 +31,7 @@
   --tiny: 12px;
 
   --content-padding: 64px;
+  --vert-padding: 32px;
   --item-margin: 4px;
   --box-shadow: 0px 2px 8px 0px rgba(41,47,54,0.32);
 }
@@ -93,40 +90,24 @@ h5 {
   font-size: var(--tiny);
 }
 
-.text--primary {
-  color: var(--primary-shade);
+.text--brand {
+  color: var(--brand-shade);
 }
 
-.text--secondary {
-  color: var(--secondary-shade);
+.text--dark-accent {
+  color: var(--dark-accent);
 }
 
-.text--tertiary {
-  color: var(--tertiary-shade);
+.text--light-accent {
+  color: var(--light-accent-shade);
 }
 
 .text--dark {
   color: var(--dark-shade);
 }
 
-.text--grey {
-  color: var(--grey-shade);
-}
-
-.text--light-grey {
-  color: var(--light-grey-shade);
-}
-
-.text--error {
-  color: var(--error-shade);
-}
-
-.text--success {
-  color: var(--success-shade);
-}
-
-.text--white {
-  color: var(--white-shade);
+.text--light {
+  color: var(--light-shade);
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,6 +125,7 @@ h5 {
     --tiny: 8px;
 
     --content-padding: 16px;
+    --vert-padding: 8px;
     --item-margin: 2px;
   }
 }
