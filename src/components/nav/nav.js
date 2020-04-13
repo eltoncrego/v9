@@ -6,7 +6,7 @@ const Nav = () => {
 
   const [isTransparent, setTransparent] = useState(true);
   window.onscroll = function() {
-    if (window.scrollY != 0) {
+    if (window.scrollY !== 0) {
       setTransparent(false);
     } else {
       setTransparent(true);

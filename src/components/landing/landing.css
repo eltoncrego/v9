@@ -5,9 +5,15 @@
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 0 var(--content-padding);
+
+  --uber: 64px;
+}
+
+.landing__text {
+  max-width: 625px;
 }
 
 .landing__lead-in {
@@ -15,16 +21,13 @@
   align-items: center;
 }
 
-#lead-in__wave-icon {
-  margin-right: var(--item-margin);
-}
-
-.landing .text--body {
-  max-width: 450px;
+#landing__subtitle {
+  margin-top: -16px;
+  margin-bottom: var(--vert-padding);
 }
 
 @media only screen and (max-width: 768px) {
-  .landing .text--body {
-    width: 100%;
+  .landing {
+    --uber: 40px;
   }
 }

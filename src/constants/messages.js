@@ -1,10 +1,11 @@
 const MESSAGES = {
   LANDING: {
-    WAVE_ICON: "👋🏽",
-    LEAD_IN: "Hello there! I'm",
-    TITLE: "Elton Christopher Rego.",
-    SUB_TITLE: "I make stuff on the web look great.",
-    DESC: "As a software engineer based in Oakland, California, I specialize in implementing beautiful UI designs and occasionally doing the design work myself.",
+    LEAD_IN: "Hi there! I'm",
+    TITLE: "Elton Christopher Rego,",
+    SUB_TITLE: "A Front-End Engineer",
+    COMPANY_LINK: "@Gantri",
+    DESC: "I'm based in Oakland, California and specialize in developing, implementing, and occasionally designing exceptional User Interface designs on the Web.",
+    CTA_BUTTON: "Let's get in touch."
   }
 };
 

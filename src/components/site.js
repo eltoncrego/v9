@@ -7,7 +7,6 @@ const Site = () => {
     <div>
       <Nav></Nav>
       <Landing></Landing>
-      <Landing></Landing>
     </div>
   );
 };
