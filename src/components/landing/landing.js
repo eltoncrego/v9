@@ -1,13 +1,13 @@
 import React from 'react';
 
 import MESSAGES from './../../constants/messages';
-import Button from '../shared/button';
+import Button from '../shared/button/button';
 import './landing.css';
 
 const Landing = () => {
   const { LANDING, LINKS } = MESSAGES;
   return (
-    <div id='landing'>
+    <div id='landing' className='bg bg--succ'>
       <div className='landing__hero'>
         <h1 className='landing__lead-in'>{LANDING.LEAD_IN}</h1>
         <h2 className='landing__title'>{LANDING.TITLE}</h2>

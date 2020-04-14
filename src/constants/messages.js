@@ -12,9 +12,9 @@ const MESSAGES = {
     CTA_BUTTON: "Let's get in touch!"
   },
   ABOUT: {
-    TITLE: "About Me:",
-    DESC: "I graduated from the University of California, Santa Cruz in 2018 with degrees in Computer Science and Business Management Economics and honors in the major.",
-    DESC_2: "Out of college, I joined a small company, Veeva, in Pleasanton that is aiming to build the industry cloud for life sciences.",
+    TITLE: "Why Elty?",
+    DESC: "Its a nickname from when I was in school.",
+    DESC_2: "I graduated from the University of California, Santa Cruz in 2018 with degrees in Computer Science and Business Management Economics as well as honors in the major. Out of college, I joined Veeva and worked to help build the industry cloud for life sciences.",
   },
   DEFAULTS: {
     BUTTON_TEXT: 'do the thing!',

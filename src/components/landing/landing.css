@@ -1,21 +1,18 @@
 #landing {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
   color: var(--black);
 
   --title: 60px;
-  --subtitle: 40px;
-  --lead-in: 20px;
   --desc: 16px;
-  --hero-width: 700px;
-  --content-padding: 32px;
 }
 
 .landing__hero {
+  grid-column: 2;
+  grid-row: 2;
   max-width: var(--hero-width);
-  padding: var(--content-padding);
 }
 
 .landing__lead-in {
@@ -51,13 +48,16 @@
   margin: 32px 0;
 }
 
+.bg--succ {
+  background-image: url('./../../assets/img/succ.jpg');
+}
+
 @media only screen and (max-width: 750px) {
   #landing {  
     --title: 24px;
     --subtitle: 24px;
-    --lead-in: 16px;
     --desc: 16px;
-    --hero-width: calc(100% - 32px);
-    --content-padding: 16px;
+    --hero-width: 100%;
+    grid-template-columns: 1fr 8fr 1fr;
   }
 }
