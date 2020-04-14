@@ -1,8 +1,8 @@
 .landing {
   position: relative;
   min-height: 100vh;
-  background-color: var(--dark-shade);
-  color: var(--light-shade);
+  background-color: var(--light-shade);
+  color: var(--dark-shade);
 
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
 #landing__down-arrow {
   position: absolute;
   bottom: 8px;
-  fill: var(--light-shade);
+  fill: var(--dark-shade);
   width: 250px;
   height: 64px;
 
@@ -39,6 +39,10 @@
   justify-content: center;
 
   animation: hop 1s cubic-bezier(.6,.13,.56,.68) 2;
+}
+
+#down-arrow__icon {
+  height: 16px;
 }
 
 #landing__down-arrow:hover {
