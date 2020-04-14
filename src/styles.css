@@ -111,18 +111,18 @@ h5 {
 }
 
 .text--grey {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 a {
-  color: var(--light-accent);
+  color: var(--brand-shade);
   text-decoration: none;
 
   transition: opacity 300ms ease-in-out;
 }
 
 a:hover {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 768px) {
