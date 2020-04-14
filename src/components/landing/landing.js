@@ -10,7 +10,7 @@ const Landing = ({nextSection}) => {
   const scrollToNextSection = () => {
     const next = document.getElementById(nextSection);
     window.scrollTo({
-      top: next.offsetTop - 96,
+      top: next.offsetTop - 64,
       left: 0,
       behavior: 'smooth'
     });

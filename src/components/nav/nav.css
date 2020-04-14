@@ -6,7 +6,7 @@
   background-color: var(--light-shade);
   box-shadow: var(--box-shadow);
   z-index: 100;
-  padding: var(--vert-padding) var(--content-padding);
+  padding: 16px var(--content-padding);
 
   display: flex;
   flex-direction: row;
@@ -14,22 +14,20 @@
   justify-content: space-between;
 
   transition: background-color 300ms ease-in-out,
-              box-shadow 300ms ease-in-out;
+              box-shadow 300ms ease-in-out,
+              padding 300ms ease-in-out;
 }
 
 .nav--transparent {
   background-color: transparent;
   box-shadow: none;
+  padding: var(--vert-padding) var(--content-padding);
 }
 
 .site-logo {
   width: 32px;
   height: 32px;
-  fill: var(--brand-shade);
+  fill: var(--dark-shade);
   
   transition: fill 300ms ease-in-out;
-}
-
-.nav--transparent .site-logo {
-  fill: var(--dark-shade);
 }
