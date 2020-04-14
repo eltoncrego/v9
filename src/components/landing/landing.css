@@ -31,17 +31,18 @@
 
 .landing__subtitle {
   font-size: var(--subtitle);
-  color: #CCC5B9;
+  color: var(--pale);
   margin: 0;
 }
 
 .landing__subtitle > a {
   text-decoration: none;
-  color: #403D39;
+  color: var(--olive);
+  transition: color 100ms ease-in-out;
 }
 
 .landing__subtitle > a:hover {
-  color: #D0F1BF;
+  color: var(--dark-neon);
 }
 
 .landing__desc {
