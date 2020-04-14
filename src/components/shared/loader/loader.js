@@ -12,6 +12,6 @@ const Loader = ({ isActive }) => {
       </svg>
     </div>
   );
-}
+};
 
 export default Loader;
