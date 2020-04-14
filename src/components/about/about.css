@@ -1,0 +1,23 @@
+#about {
+  padding: var(--content-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+.about__text { 
+  max-width: var(--hero-width);
+  text-align: center;
+}
+
+.about__text-title {
+  font-size: var(--subtitle);
+}
+
+.about__text-desc {
+  font-size: var(--lead-in);
+  display: block;
+  margin-bottom: 32px;
+}
