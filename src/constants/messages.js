@@ -9,7 +9,8 @@ const MESSAGES = {
     SUB_TITLE: "a Front-End Engineer ",
     COMPANY_LINK: "@Gantri",
     DESC: "I'm based in Oakland, California and specialize in developing, implementing, and occasionally designing exceptional User Interface designs on the Web.",
-    CTA_BUTTON: "Let's get in touch!"
+    CTA_BUTTON: "Let's get in touch!",
+    IMG_ALT_TEXT: "a succulent"
   },
   ABOUT: {
     TITLE: "Why Elty?",

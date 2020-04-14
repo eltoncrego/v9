@@ -7,10 +7,10 @@ const About = () => {
   const { ABOUT } = MESSAGES;
   return(
     <div id='about'>
-      <div class='about__text'>
-        <h1 class='about__text-title'>{ABOUT.TITLE}</h1>
-        <span class='about__text-desc'>{ABOUT.DESC}</span>
-        <span class='about__text-desc'>{ABOUT.DESC_2}</span>
+      <div className='about__text'>
+        <h1 className='about__text-title'>{ABOUT.TITLE}</h1>
+        <span className='about__text-desc'>{ABOUT.DESC}</span>
+        <span className='about__text-desc'>{ABOUT.DESC_2}</span>
       </div>
     </div>
   );
