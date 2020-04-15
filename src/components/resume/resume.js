@@ -22,9 +22,14 @@ const Resume = () => {
 
   let activeJob = resumeCopy[activeIndex];
   let companyName = activeJob.fullname ? activeJob.fullname : activeJob.company;
-  let desc = activeJob.desc.map((line) => {
+  let desc = activeJob.desc.map((line, index) => {
     return(
-      <div className='resume-content__desc'>{line}</div>
+      <div
+        key={index}
+        className='resume-content__desc'
+      >
+        {line}
+      </div>
     );
   })
 
