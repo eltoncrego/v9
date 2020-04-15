@@ -21,6 +21,10 @@ const MESSAGES = {
   RESUME: {
     TITLE: "Where I've Worked",
   },
+  FOOTER: {
+    PREFIX: "Made with Vanilla React.js",
+    COPY: "2020 Elton Christopher Rego. All Rights Reserved."
+  },
   DEFAULTS: {
     BUTTON_TEXT: 'do the thing!',
   }

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import RESUME from '../../constants/content--resume';
 import MESSAGES from '../../constants/content';
 import Option from './resume__option/resume__option';
-import './../shared/styles/card-grid.css';
+import './../../shared-styles/card-grid.css';
 import './resume.css';
 
 const Resume = () => {
@@ -22,9 +22,14 @@ const Resume = () => {
 
   let activeJob = resumeCopy[activeIndex];
   let companyName = activeJob.fullname ? activeJob.fullname : activeJob.company;
-  let desc = activeJob.desc.map((line) => {
+  let desc = activeJob.desc.map((line, index) => {
     return(
-      <div className='resume-content__desc'>{line}</div>
+      <div
+        key={index}
+        className='resume-content__desc'
+      >
+        {line}
+      </div>
     );
   })
 
