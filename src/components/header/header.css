@@ -26,8 +26,33 @@
   fill: var(--dark-neon);
 }
 
+.header__links {
+  display: flex;
+  padding-top: 3px;
+}
+
+.header__link {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--olive);
+  margin-left: var(--content-padding);
+  transition: color 100ms ease-in-out;
+}
+
+.header__link:hover {
+  cursor: pointer;
+  color: var(--dark-neon);
+}
 
 #header.header--transparent {
   background-color: transparent;
   box-shadow: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .header__links {
+    display: none;
+  }
 }
