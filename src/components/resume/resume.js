@@ -22,6 +22,11 @@ const Resume = () => {
 
   let activeJob = resumeCopy[activeIndex];
   let companyName = activeJob.fullname ? activeJob.fullname : activeJob.company;
+  let desc = activeJob.desc.map((line) => {
+    return(
+      <div className='resume-content__desc'>{line}</div>
+    );
+  })
 
   return (
     <div id='resume' className='home-page__card'>
@@ -31,7 +36,7 @@ const Resume = () => {
       <div className='card__child--content-padding resume__content'>
         <h1>{MESSAGES.RESUME.TITLE}</h1>
         <h2 className='resume-content__company-title'>{companyName}</h2>
-        <div className='resume-content__desc'>{activeJob.desc}</div>
+        {desc}
       </div>
     </div>
   )
