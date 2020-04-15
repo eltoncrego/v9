@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MESSAGES from '../../constants/content';
+import MESSAGES from '../../content/content';
 import Button from '../button/button';
 import './landing.css';
 
@@ -10,7 +10,7 @@ const Landing = ({ onLoadAction }) => {
     <div id='landing'>
       <img 
         className='bg--image' 
-        src='/img/succ.jpg'
+        src={LANDING.IMG}
         alt={LANDING.IMG_ALT_TEXT}
         onLoad={() => onLoadAction ? onLoadAction() : null}
       />
