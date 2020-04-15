@@ -1,5 +1,5 @@
 # Version 8.0
-This version of my personal site marks the switch over to React fully. I plan on implementing the site and then following [this guid](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a).
+This version of my personal site marks the switch over to React fully. I plan on implementing the site and then following [this guide](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
