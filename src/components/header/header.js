@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import HEADER_LINKS from './../../constants/content--header-links';
+import HEADER_LINKS from '../../content/content--header-links';
 import './header.css';
 
 const Header = () => {

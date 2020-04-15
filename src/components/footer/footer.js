@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './footer.css';
-import MESSAGES from '../../constants/content';
+import MESSAGES from '../../content/content';
 
 const Footer = () => {
   return (

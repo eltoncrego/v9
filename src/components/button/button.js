@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MESSAGES from '../../constants/content';
+import MESSAGES from '../../content/content';
 import './button.css';
 
 const Button = ({ text, onClickAction }) => {

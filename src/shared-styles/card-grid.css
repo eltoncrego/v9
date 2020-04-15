@@ -4,6 +4,10 @@
   margin: var(--content-padding);
 }
 
+.card__child {
+  grid-row: 1;
+}
+
 .home-page__card > .card__child--whole-width {
   grid-column: 1;
 }

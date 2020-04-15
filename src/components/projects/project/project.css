@@ -1,0 +1,21 @@
+.project__image {
+  position: relative;
+  padding-top: 125%;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--content-padding);
+}
+
+.project__title {
+  font-size: var(--subtitle);
+  margin-bottom: var(--content-padding);
+}
+
+.project__desc {
+  font-size: var(--lead-in);
+  opacity: 0.6;
+}
