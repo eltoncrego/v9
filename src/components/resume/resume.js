@@ -35,7 +35,7 @@ const Resume = () => {
       </div>
       <div className='card__child--content-padding resume__content'>
         <h1>{MESSAGES.RESUME.TITLE}</h1>
-        <h2 className='resume-content__company-title'>{companyName}</h2>
+        <h2 className='resume-content__company-title'><a href={activeJob.site_link}>{companyName}</a></h2>
         {desc}
       </div>
     </div>

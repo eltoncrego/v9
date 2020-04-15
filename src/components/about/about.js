@@ -11,6 +11,7 @@ const About = () => {
         <h1 className='about__text-title'>{ABOUT.TITLE}</h1>
         <span className='about__text-desc'>{ABOUT.DESC}</span>
         <span className='about__text-desc'>{ABOUT.DESC_2}</span>
+        <span className='about__text-desc'>{ABOUT.DESC_3}</span>
       </div>
     </div>
   );
