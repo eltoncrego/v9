@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import RESUME from '../../constants/content--resume';
 import MESSAGES from '../../constants/content';
-import Option from './option/option';
+import Option from './resume__option/resume__option';
 import './../shared/styles/card-grid.css';
 import './resume.css';
 
@@ -34,7 +34,7 @@ const Resume = () => {
         {resumeOptions}
       </div>
       <div className='card__child--content-padding resume__content'>
-        <h1>{MESSAGES.RESUME.TITLE}</h1>
+        <h1 className='resume-content__title'>{MESSAGES.RESUME.TITLE}</h1>
         <h2 className='resume-content__company-title'><a href={activeJob.site_link}>{companyName}</a></h2>
         {desc}
       </div>

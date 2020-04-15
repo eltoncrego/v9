@@ -2,11 +2,11 @@
   padding: var(--content-padding);
   transition: background-color 100ms ease-in-out,
               border-right 100ms ease-in-out;
-  --subtitle: 30px;
+  --subtitle: 20px;
 }
 
 .option--active {
-  border-right: 16px solid var(--dark-neon);
+  border-right: 4px solid var(--dark-neon);
 }
 
 .option:hover {
@@ -25,6 +25,6 @@
 
 @media only screen and (max-width: 750px) {
   .option {
-    --subtitle: 20px;
+    --subtitle: 16px;
   }
 }

@@ -23,6 +23,10 @@
   overflow-y: scroll;
 }
 
+.resume-content__title {
+  margin-bottom: var(--content-padding);
+}
+
 .resume__content::-webkit-scrollbar {
   display: none;
 }
