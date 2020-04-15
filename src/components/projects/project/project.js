@@ -3,7 +3,7 @@ import React from 'react';
 import './project.css';
 
 const Project = ({ project, isReversed }) => {
-  const { title, desc, bgColor, color, image } = project;
+  const { title, desc, bgColor, color, image, paddingOverride, bgOverride } = project;
   const { url, alt } = image;
   return(
     <div 
@@ -15,9 +15,17 @@ const Project = ({ project, isReversed }) => {
         }
       }
     >
-      <div className='project__image card__child card__child--whole-width'>
+      <div 
+        className='project__image card__child card__child--whole-width'
+        style={ paddingOverride ? {
+          paddingTop: paddingOverride,
+        } : null}
+      >
         <img 
           className='bg--image'
+          style={ bgOverride ? {
+            objectPosition: bgOverride,
+          } : null}
           src={url}
           alt={alt}
           />

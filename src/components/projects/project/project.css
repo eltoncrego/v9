@@ -1,18 +1,17 @@
 .project__image {
   position: relative;
-  padding-top: 125%;
+  padding-top: 80%;
 }
 
 .project__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--content-padding);
+  padding: 64px var(--content-padding);
 }
 
 .project__title {
   font-size: var(--subtitle);
-  margin-bottom: var(--content-padding);
 }
 
 .project__desc {

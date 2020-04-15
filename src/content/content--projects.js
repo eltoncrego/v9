@@ -1,12 +1,14 @@
 const PROJECTS = [
   {
-    title: 'Overland 38',
-    desc: "Overland 38 is a community for people into Overlanding, offroading, and outdoor adventures in the San Francisco Bay Area, CA. I designed and helped implement the forward-facing website that is built with React.",
+    title: 'Motif for Spotify',
+    desc: "Motif is a chrome extension I helped design to help Spotify users organize their music library based on various moods, genres, grouping, or generally whatever category you can come up with. The intent is to add a tagging and search system that, by adding tags to the songs you listen to, you'll be able to generate playlists easily based on your listening preferences at the time.",
     bgColor: 'dark-neon',
     color: 'white',
+    paddingOverride: '0',
+    bgOverride: 'right top',
     image: {
-      url: '/img/overland.jpg',
-      alt: 'a bunch of toyota 4runners',
+      url: '/img/view-playlist.gif',
+      alt: 'a gif of the project',
     }
   },
   {
@@ -17,6 +19,16 @@ const PROJECTS = [
     image: {
       url: '/img/vroom.png',
       alt: 'well theres a bunch of iphone mockups with the app on it',
+    }
+  },
+  {
+    title: 'Overland 38',
+    desc: "Overland 38 is a community for people into Overlanding, offroading, and outdoor adventures in the San Francisco Bay Area, CA. I designed and helped implement the forward-facing website that is built with React.",
+    bgColor: 'olive',
+    color: 'white',
+    image: {
+      url: '/img/overland.jpg',
+      alt: 'a bunch of toyota 4runners',
     }
   }
 ];

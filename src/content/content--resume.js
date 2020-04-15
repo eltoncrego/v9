@@ -48,7 +48,7 @@ const RESUME = [
   {
     title: 'Software Engineering Intern',
     company: 'HPE',
-    fullname: 'Hewlette Packard Enterprise',
+    fullname: 'Hewlett Packard Enterprise',
     site_link: 'https://www.hpe.com/us/en/home.html',
     time: 'June 2016 - September 2016',
     location: 'Sunnyvale, California',
