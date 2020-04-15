@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MESSAGES from '../../constants/content';
-import Button from '../shared/button/button';
+import Button from '../button/button';
 import './landing.css';
 
 const Landing = ({ onLoadAction }) => {

@@ -1,0 +1,33 @@
+#header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px var(--content-padding);
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px 0px rgba(37, 36, 34, .10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 100ms ease-in-out,
+              box-shadow 100ms ease-in-out;
+}
+
+.header__site-logo {
+  height: 32px;
+  width: 32px;
+  fill: var(--black);
+  transition: fill 100ms ease-in-out;
+}
+
+.header__site-logo:hover {
+  cursor: pointer;
+  fill: var(--dark-neon);
+}
+
+
+#header.header--transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
