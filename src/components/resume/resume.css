@@ -5,6 +5,7 @@
 }
 
 .resume__options {
+  background-color: var(--white);
   color: var(--black);
   overflow-y: scroll;
   max-height: 750px;
