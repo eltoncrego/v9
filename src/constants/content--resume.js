@@ -1,6 +1,17 @@
 const RESUME = [
   {
     title: 'Software Engineer',
+    company: 'Gantri',
+    site_link: 'https://www.gantri.com/',
+    time: 'April 2020 - Present',
+    location: 'San Francisco, California',
+    desc: [
+      "Gantri is a new generation of lighting. We collaborate with today’s leading designers to create fresh, practical designs and manufacture them from cutting-edge sustainable materials. We’re about gifted designers, great designs, and a greener world.",
+      "I'm a newbie here, so I'm still learning the ropes"
+    ]
+  },
+  {
+    title: 'Software Engineer',
     company: 'Veeva Systems',
     site_link: 'https://www.veeva.com/',
     time: 'June 2018 - April 2020',
