@@ -1,0 +1,22 @@
+#resume {
+  background-color: var(--olive);
+  color: var(--white);
+  height: 750px;
+}
+
+.resume__options {
+  background-color: var(--white);
+}
+
+.resume__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .resume__content {
+    padding: var(--content-padding);
+  }
+}

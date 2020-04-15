@@ -14,7 +14,7 @@
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--neon-bg);
+  background-color: var(--dark-neon-bg);
 }
 
 .btn__text {

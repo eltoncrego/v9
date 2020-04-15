@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Landing from './landing/landing';
 import About from './about/about';
 import Loader from './shared/loader/loader';
+import Resume from './resume/resume';
 
 const Site = () => {
   const [loaded, setLoaded] = useState(false);
@@ -15,6 +16,7 @@ const Site = () => {
       {loaded ? null : <Loader isActive={loaderActive}/>}
       <Landing onLoadAction={() => setLoaderActive(true)}/>
       <About/>
+      <Resume/>
     </>
   );
 };
