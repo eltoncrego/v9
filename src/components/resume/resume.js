@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import RESUME from '../../constants/content--resume';
+import MESSAGES from '../../constants/content';
 import Option from './option/option';
 import './../shared/styles/card-grid.css';
 import './resume.css';
@@ -19,11 +20,8 @@ const Resume = () => {
     );
   });
 
-  const resumeContent = ({ desc }) => {
-    return (
-      <div>{desc}</div>
-    );
-  }
+  let activeJob = resumeCopy[activeIndex];
+  let companyName = activeJob.fullname ? activeJob.fullname : activeJob.company;
 
   return (
     <div id='resume' className='home-page__card'>
@@ -31,7 +29,9 @@ const Resume = () => {
         {resumeOptions}
       </div>
       <div className='card__child--content-padding resume__content'>
-        {resumeContent(resumeCopy[activeIndex])}
+        <h1>{MESSAGES.RESUME.TITLE}</h1>
+        <h2 className='resume-content__company-title'>{companyName}</h2>
+        <div className='resume-content__desc'>{activeJob.desc}</div>
       </div>
     </div>
   )

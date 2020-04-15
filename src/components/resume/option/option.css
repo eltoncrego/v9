@@ -1,24 +1,21 @@
 .option {
   padding: var(--content-padding);
   transition: background-color 100ms ease-in-out,
-              color 100ms ease-in-out;
+              border-right 100ms ease-in-out;
   --subtitle: 30px;
 }
 
 .option--active {
-  background-color: var(--dark-neon);
-  color: var(--white);
+  border-right: 16px solid var(--dark-neon);
 }
 
 .option:hover {
   cursor: pointer;
   background-color: var(--dark-neon-bg);
-  color: var(--black);
 }
 
 .option > h1 {
   font-size: var(--subtitle);
-  margin: 0
 }
 
 .option__text--secondary {

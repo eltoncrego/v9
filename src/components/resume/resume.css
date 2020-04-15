@@ -1,12 +1,18 @@
 #resume {
-  background-color: var(--dark-neon);
-  height: 750px;
+  background-color: var(--cardstock);
+  color: var(--black);
+  max-height: 750px;
 }
 
 .resume__options {
   background-color: var(--white);
   color: var(--black);
   overflow-y: scroll;
+  max-height: 750px;
+}
+
+.resume__options::-webkit-scrollbar {
+  display: none;
 }
 
 .resume__content {
@@ -14,12 +20,29 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: var(--white);
   font-size: var(--lead-in);
+  overflow-y: scroll;
+}
+
+.resume__content::-webkit-scrollbar {
+  display: none;
+}
+
+.resume-content__company-title {
+  color: var(--olive);
+  opacity: 0.4;
+}
+
+.resume-content__desc {
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 750px) {
+  #resume {
+    max-height: none;
+  }
+
   .resume__content {
-    padding: var(--content-padding);
+    padding: 0 var(--content-padding);
   }
 }

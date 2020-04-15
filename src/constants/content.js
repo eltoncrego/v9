@@ -17,6 +17,9 @@ const MESSAGES = {
     DESC: "Its a nickname from when I was in school.",
     DESC_2: "I graduated from the University of California, Santa Cruz in 2018 with degrees in Computer Science and Business Management Economics as well as honors in the major. Out of college, I joined Veeva and worked to help build the industry cloud for life sciences.",
   },
+  RESUME: {
+    TITLE: "Where I've Worked",
+  },
   DEFAULTS: {
     BUTTON_TEXT: 'do the thing!',
   }

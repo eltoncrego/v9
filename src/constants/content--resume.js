@@ -10,6 +10,7 @@ const RESUME = [
   {
     title: 'Founder and CEO',
     company: 'Revi Technologies',
+    fullname: 'Revi Technologies LLC',
     site_link: 'https://github.com/eltoncrego/revi-tech-web',
     time: 'November 2017 - September 2018',
     location: 'Santa Cruz, California',
@@ -18,6 +19,7 @@ const RESUME = [
   {
     title: 'Undergraduate Web Master',
     company: 'UCSC Genomics Institute',
+    fullname: 'The UC Santa Cruz Genomics Institute',
     site_link: 'https://ucscgenomics.soe.ucsc.edu/',
     time: 'September 2016 - June 2018',
     location: 'Santa Cruz, California',
@@ -26,6 +28,7 @@ const RESUME = [
   {
     title: 'Software Engineering Intern',
     company: 'HPE',
+    fullname: 'Hewlette Packard Enterprise',
     site_link: 'https://www.hpe.com/us/en/home.html',
     time: 'June 2016 - September 2016',
     location: 'Sunnyvale, California',
@@ -34,6 +37,7 @@ const RESUME = [
   {
     title: 'Cyber Security Intern',
     company: 'PG&E',
+    fullname: 'Pacific Gas and Electric Company',
     site_link: 'https://pge.com/',
     time: 'June 2015 - September 2015',
     location: 'San Francisco, California',
