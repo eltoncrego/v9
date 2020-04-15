@@ -13,9 +13,13 @@ const MESSAGES = {
     IMG_ALT_TEXT: "a succulent"
   },
   ABOUT: {
-    TITLE: "Why Elty?",
-    DESC: "Its a nickname from when I was in school.",
-    DESC_2: "I graduated from the University of California, Santa Cruz in 2018 with degrees in Computer Science and Business Management Economics as well as honors in the major. Out of college, I joined Veeva and worked to help build the industry cloud for life sciences.",
+    TITLE: "Do you know Elty?",
+    DESC: "\"Of course I know him, he is me.\"",
+    DESC_2: "Elty is a nickname from when I was in school. I don't know why I like it, but I do.",
+    DESC_3: "I graduated from the University of California, Santa Cruz in 2018 with degrees in Computer Science and Business Management Economics as well as honors in the major. Out of college, I joined Veeva and worked to help build the industry cloud for life sciences.",
+  },
+  RESUME: {
+    TITLE: "Where I've Worked",
   },
   DEFAULTS: {
     BUTTON_TEXT: 'do the thing!',

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MESSAGES from './../../constants/messages';
+import MESSAGES from '../../constants/content';
 import Button from '../shared/button/button';
 import './landing.css';
 

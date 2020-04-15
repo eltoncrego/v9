@@ -1,0 +1,39 @@
+.option {
+  padding: var(--content-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: background-color 100ms ease-in-out,
+              border 100ms ease-in-out;
+  --subtitle: 20px;
+}
+
+.option--active {
+  border-right: 4px solid var(--dark-neon);
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: var(--dark-neon-bg);
+}
+
+.option > h1 {
+  font-size: var(--subtitle);
+}
+
+.option__text--secondary {
+  font-size: var(--lead-in);
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 750px) {
+  .option {
+    align-items: flex-start;
+    --subtitle: 16px;
+  }
+
+  .option--active {
+    border-right: none;
+    border-left: 4px solid var(--dark-neon);
+  }
+}
