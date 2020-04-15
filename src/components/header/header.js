@@ -18,7 +18,7 @@ const Header = () => {
     let scrollHeight = 0;
     if (item !== 'home') {
       let obj = document.getElementById(item);
-      scrollHeight = obj.offsetTop;
+      scrollHeight = obj.offsetTop - 64;
     }
 
     window.scrollTo({
@@ -56,6 +56,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

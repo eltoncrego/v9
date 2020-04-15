@@ -4,6 +4,7 @@ import About from './about/about';
 import Loader from './loader/loader';
 import Resume from './resume/resume';
 import Header from './header/header';
+import Footer from './footer/footer';
 
 const Site = () => {
   const [loaded, setLoaded] = useState(false);
@@ -19,6 +20,7 @@ const Site = () => {
       <Landing onLoadAction={() => setLoaderActive(true)}/>
       <About/>
       <Resume/>
+      <Footer/>
     </>
   );
 };
