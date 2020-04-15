@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import RESUME from '../../constants/content--resume';
 import MESSAGES from '../../constants/content';
 import Option from './resume__option/resume__option';
-import './../shared/styles/card-grid.css';
+import './../../shared-styles/card-grid.css';
 import './resume.css';
 
 const Resume = () => {
