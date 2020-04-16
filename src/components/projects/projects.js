@@ -2,6 +2,7 @@ import React from 'react';
 
 import PROJECTS from './../../content/content--projects';
 import Project from './project/project';
+import './projects.css';
 
 const Projects = () => {
   let projects = PROJECTS.map((project, index) => {
@@ -16,6 +17,7 @@ const Projects = () => {
 
   return (
     <div id='projects'>
+      <div class='projects__title'>Projects that I've Worked On</div>
       {projects}
     </div>
   );
