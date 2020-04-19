@@ -26,6 +26,15 @@
   opacity: 0.6;
 }
 
+.option__company-link {
+  color: var(--dark-neon);
+}
+
+.option__company-link:hover {
+  color: var(--pale);
+}
+
+
 @media only screen and (max-width: 750px) {
   .option {
     align-items: flex-start;
