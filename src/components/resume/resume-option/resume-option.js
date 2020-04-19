@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './resume__option.css';
+import './resume-option.css';
 
 const Option = ({ option, onClickAction, isActive }) => {
   return (
