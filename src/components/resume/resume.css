@@ -6,6 +6,7 @@
 
 .resume__options {
   background-color: var(--white);
+  border: 2px solid var(--cardstock);
   color: var(--black);
   overflow-y: scroll;
   max-height: 750px;
@@ -49,5 +50,9 @@
 
   .resume__content {
     padding: 0 var(--content-padding);
+  }
+
+  .resume__options {
+    max-height: none;
   }
 }
