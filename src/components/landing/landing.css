@@ -35,7 +35,7 @@
 
 .landing__desc {
   font-size: var(--body);
-  line-height: 19px;
+  line-height: var(--body-spacing);
   display: block;
   margin: 32px 0;
 }
