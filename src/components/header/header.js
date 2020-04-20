@@ -20,6 +20,7 @@ const Header = () => {
       <div className='header__links'>
         {util.getHeaderLinks(HEADER_LINKS)}
       </div>
+      
     </div>
   );
 };

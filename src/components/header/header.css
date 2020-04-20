@@ -28,13 +28,13 @@
 
 .header__links {
   display: flex;
+  align-items: center;
   padding-top: 3px;
 }
 
 .header__link {
-  text-transform: lowercase;
-  font-size: 16px;
-  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
   color: var(--olive);
   margin-left: var(--content-padding);
   transition: color 100ms ease-in-out;
