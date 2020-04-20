@@ -5,7 +5,6 @@
   align-items: flex-end;
   transition: background-color 100ms ease-in-out,
               border 100ms ease-in-out;
-  --subtitle: 20px;
 }
 
 .option--active {
@@ -18,11 +17,12 @@
 }
 
 .option > h1 {
-  font-size: var(--subtitle);
+  font-size: var(--body);
 }
 
 .option__text--secondary {
-  font-size: var(--lead-in);
+  font-size: var(--body);
+  line-height: var(--body-spacing);
   opacity: 0.6;
 }
 

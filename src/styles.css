@@ -8,10 +8,14 @@
   --dark-neon: #7C9072;
   --dark-neon-bg: rgba(124, 144, 114, 0.2);
   --site-font: 'Open Sans', sans-serif;
+  --bold-font: 'Poppins', sans-serif;
+  --shadow: 0px 2px 4px 0px rgba(37, 36, 34, .10);
+  --shadow-full: 0px 4px 16px 0px rgba(37, 36, 34, .30);
   --content-padding: 32px;
-  --hero-width: 700px;
-  --subtitle: 40px;
-  --lead-in: 20px;
+  --subtitle: 24px;
+  --lead-in: 18px;
+  --body: 14px;
+  --body-spacing: 22px;
 }
 
 html, body {
@@ -26,17 +30,18 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: var(--bold-font);
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: var(--olive);
+  color: var(--dark-neon);
   transition: color 100ms ease-in-out;
 }
 
 a:hover {
-  color: var(--dark-neon);
+  color: var(--olive);
 }
 
 .bg--image {
@@ -55,7 +60,7 @@ a:hover {
 
 @media only screen and (max-width: 750px) {
   :root {
-    --subtitle: 24px;
-    --lead-in: 16px;
+    --subtitle: 18px;
+    --lead-in: 14px;
   }
 }

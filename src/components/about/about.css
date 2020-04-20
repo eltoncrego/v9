@@ -8,17 +8,19 @@
 }
 
 .about__text { 
-  max-width: var(--hero-width);
+  max-width: 700px;
   text-align: center;
 }
 
 .about__text-title {
   font-size: var(--subtitle);
+  text-transform: capitalize;
   margin: var(--content-padding);
 }
 
 .about__text-desc {
-  font-size: var(--lead-in);
+  font-size: var(--body);
+  line-height: var(--body-spacing);
   display: block;
   margin-bottom: 32px;
 }

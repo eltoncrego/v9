@@ -1,7 +1,6 @@
 #resume {
   background-color: var(--cardstock);
   color: var(--black);
-  max-height: 750px;
 }
 
 .resume__options {
@@ -9,7 +8,6 @@
   border: 2px solid var(--cardstock);
   color: var(--black);
   overflow-y: scroll;
-  max-height: 750px;
 }
 
 .resume__options::-webkit-scrollbar {
@@ -21,7 +19,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  font-size: var(--lead-in);
+  font-size: var(--body);
+  line-height: var(--body-spacing);
   overflow-y: scroll;
 }
 
@@ -35,7 +34,7 @@
 
 .resume-content__company-title {
   color: var(--olive);
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .resume-content__desc {
