@@ -7,10 +7,6 @@ const HEADER_LINKS = [
     text: 'experience',
     id: 'resume'
   },
-  {
-    text: 'projects',
-    id: 'projects'
-  }
 ];
 
 export default HEADER_LINKS;
