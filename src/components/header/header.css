@@ -6,7 +6,7 @@
   right: 0;
   padding: 16px var(--content-padding);
   background-color: var(--white);
-  box-shadow: 0px 2px 4px 0px rgba(37, 36, 34, .10);
+  box-shadow: var(--shadow);
   display: flex;
   align-items: center;
   justify-content: space-between;

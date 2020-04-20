@@ -30,18 +30,8 @@
 
 .landing__subtitle {
   font-size: var(--subtitle);
-  color: var(--pale);
-  margin: 0;
-}
-
-.landing__subtitle > a {
-  text-decoration: none;
   color: var(--olive);
-  transition: color 100ms ease-in-out;
-}
-
-.landing__subtitle > a:hover {
-  color: var(--dark-neon);
+  margin: 0;
 }
 
 .landing__desc {
@@ -54,7 +44,7 @@
 @media only screen and (max-width: 750px) {
   #landing {  
     --title: 24px;
-    --subtitle: 24px;
+    --subtitle: 18px;
     --hero-width: 100%;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 4fr 2fr;

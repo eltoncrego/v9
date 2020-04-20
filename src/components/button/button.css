@@ -1,24 +1,36 @@
 .btn {
-  --content-padding: 8px 16px;
-  --font-size: 16px;
+  --content-padding: 12px 16px;
+  --font-size: 12px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: var(--content-padding);
-  color: var(--dark-neon);
-  border: 1px solid var(--dark-neon);
+  color: var(--white);
+  background-color: var(--dark-neon);
   border-radius: 6px;
-  transition: background-color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
+  box-shadow: var(--shadow);
+  transition: box-shadow 200ms ease-in-out,
+              transform 100ms ease-in-out,
+              background-color 100ms ease-in-out;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--dark-neon-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-full);
+}
+
+.btn:active {
+  background-color: var(--pale);
+  transform: translateY(0);
+  box-shadow: var(--shadow);
 }
 
 .btn__text {
   display: block;
+  text-transform: capitalize;
   font-size: var(--font-size);
   line-height: var(--font-size);
   margin: 0;
