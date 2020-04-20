@@ -8,7 +8,6 @@
 
   --hero-width: 580px;
   --title: 40px;
-  --desc: 14px;
 }
 
 .landing__hero {
@@ -35,7 +34,7 @@
 }
 
 .landing__desc {
-  font-size: var(--desc);
+  font-size: var(--body);
   line-height: 19px;
   display: block;
   margin: 32px 0;
