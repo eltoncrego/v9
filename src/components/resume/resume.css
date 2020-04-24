@@ -1,0 +1,58 @@
+#resume {
+  background-color: var(--cardstock);
+  color: var(--black);
+}
+
+.resume__options {
+  background-color: var(--white);
+  border: 2px solid var(--cardstock);
+  color: var(--black);
+  overflow-y: scroll;
+}
+
+.resume__options::-webkit-scrollbar {
+  display: none;
+}
+
+.resume__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: var(--body);
+  line-height: var(--body-spacing);
+  overflow-y: scroll;
+}
+
+.resume-content__title {
+  margin-bottom: var(--content-padding);
+  line-height: 32px;
+}
+
+.resume__content::-webkit-scrollbar {
+  display: none;
+}
+
+.resume-content__company-title {
+  color: var(--olive);
+  opacity: 0.8;
+}
+
+.resume-content__desc {
+  margin-top: 16px;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 750px) {
+  #resume {
+    max-height: none;
+  }
+
+  .resume__content {
+    padding: 0 var(--content-padding);
+  }
+
+  .resume__options {
+    max-height: none;
+  }
+}
