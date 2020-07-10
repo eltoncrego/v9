@@ -6,13 +6,14 @@ import Header from './header/header';
 import SWESite from './swe/index';
 import MusicSite from './music/index';
 
+const history = createBrowserHistory();
+
 const Site = () => {
-  const history = createBrowserHistory();
   return (
     <Router history={history}>
       <Header />
       <Switch>
-        <Route exact path='/music'>
+        <Route path='/music'>
           <MusicSite />
         </Route>
         <Route path='/'>
