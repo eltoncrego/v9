@@ -16,11 +16,11 @@ const Site = () => {
     <Router history={history}>
       <Header />
       <Switch>
-        <Route path='/music'>
+        <Route exact path='/music'>
           <MusicSite />
         </Route>
         {Object.keys(SONG_INFO).map((key) => (
-          <Route key={key} path={key}>
+          <Route key={key} exact path={key}>
             <SongTree pathname={key} songInfo={SONG_INFO[key]} />
           </Route>
         ))}
