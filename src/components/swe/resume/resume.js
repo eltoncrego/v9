@@ -1,8 +1,7 @@
 import React from 'react';
-
-import MESSAGES from '../../content/content';
+import MESSAGES from '../../../content/content';
 import utils from './resume-utils';
-import './../../shared-styles/card-grid.css';
+import './../../../shared-styles/card-grid.css';
 import './resume.css';
 
 const Resume = () => {

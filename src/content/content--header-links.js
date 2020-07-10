@@ -1,4 +1,4 @@
-const HEADER_LINKS = [
+const SWE_HEADER_LINKS = [
   {
     text: 'about me',
     id: 'about'
@@ -7,6 +7,10 @@ const HEADER_LINKS = [
     text: 'experience',
     id: 'resume'
   },
+  {
+    text: 'music',
+    to: '/music'
+  }
 ];
 
-export default HEADER_LINKS;
+export default SWE_HEADER_LINKS;

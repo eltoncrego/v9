@@ -1,7 +1,6 @@
 import React from 'react';
-
-import MESSAGES from '../../content/content';
 import './about.css';
+import MESSAGES from '../../../content/content';
 
 const About = () => {
   const { ABOUT } = MESSAGES;

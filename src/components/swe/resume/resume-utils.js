@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import RESUME from '../../content/content--resume';
+import RESUME from '../../../content/content--resume';
 import Option from './resume-option/resume-option';
 
 const useStateForResume = (initialValue) => {
