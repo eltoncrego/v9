@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Landing from './landing/landing';
 import About from './about/about';
 import Loader from './loader/loader';
@@ -14,14 +14,14 @@ const Site = () => {
   }, [loaderActive]);
 
   return (
-    <>
-      {loaded ? null : <Loader isActive={loaderActive}/>}
-      <Header/>
-      <Landing onLoadAction={() => setLoaderActive(true)}/>
-      <About/>
-      <Resume/>
-      <Footer/>
-    </>
+    <Fragment>
+      {loaded ? null : <Loader isActive={loaderActive} />}
+      <Header />
+      <Landing onLoadAction={() => setLoaderActive(true)} />
+      <About />
+      <Resume />
+      <Footer />
+    </Fragment>
   );
 };
 
