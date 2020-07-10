@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { MUSIC_MESSAGES } from '../../../content/content';
 import LinkList from '../song-links';
@@ -6,6 +6,10 @@ import LinkList from '../song-links';
 const SongTree = ({ pathname, songInfo }) => {
   const { PATH_TO_TREES } = MUSIC_MESSAGES;
   const songLinks = PATH_TO_TREES[pathname];
+
+  useEffect(() => {
+    document.title = `Elty • ${songInfo.TITLE}`;
+  }, [songInfo.TITLE]);
 
   return (
     <div className='music__page-wrapper'>

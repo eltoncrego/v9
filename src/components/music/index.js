@@ -8,6 +8,10 @@ import { MUSIC_MESSAGES } from '../../content/content';
 const MusicSite = () => {
   const loader = useLoader();
   useEffect(() => loader.setLoaderActive(true), [loader]);
+  
+  useEffect(() => {
+    document.title = 'Elty\'s Music';
+  }, []);
 
   const { SONG_LINKS } = MUSIC_MESSAGES;
 
