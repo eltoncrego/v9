@@ -31,4 +31,11 @@ const MESSAGES = {
   }
 };
 
+export const MUSIC_MESSAGES = {
+  LANDING: {
+    TITLE: 'Music',
+    DESC: "I've been playing music since I was 6 years old and have been fortunate enough to pick up various instruments along the way. Now I write music in my bedroom as an extension of my journal. Below is a list of links to my published songs."
+  }
+}
+
 export default MESSAGES;
