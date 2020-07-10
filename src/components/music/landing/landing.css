@@ -1,0 +1,15 @@
+#landing--music {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.music-landing__title {
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 750px) {
+  .music-landing__title {
+    max-width: unset;
+  }  
+}

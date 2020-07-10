@@ -1,28 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import Landing from './landing/landing';
-import About from './about/about';
-import Loader from './loader/loader';
-import Resume from './resume/resume';
+import React from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import withLoaderProvider from './loader/loader-provider';
 import Header from './header/header';
-import Footer from './footer/footer';
+import SWESite from './swe/index';
+import MusicSite from './music/index';
+import { MUSIC_MESSAGES } from '../content/content';
+import SongTree from './music/song-tree';
+
+const history = createBrowserHistory();
 
 const Site = () => {
-  const [loaded, setLoaded] = useState(false);
-  const [loaderActive, setLoaderActive] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setLoaded(true), 1200);
-  }, [loaderActive]);
-
+  const { SONG_INFO } = MUSIC_MESSAGES;
   return (
-    <>
-      {loaded ? null : <Loader isActive={loaderActive}/>}
-      <Header/>
-      <Landing onLoadAction={() => setLoaderActive(true)}/>
-      <About/>
-      <Resume/>
-      <Footer/>
-    </>
+    <Router history={history}>
+      <Header />
+      <Switch>
+        <Route path='/music'>
+          <MusicSite />
+        </Route>
+        {Object.keys(SONG_INFO).map((key) => (
+          <Route key={key} path={key}>
+            <SongTree pathname={key} songInfo={SONG_INFO[key]} />
+          </Route>
+        ))}
+        <Route path='/'>
+          <SWESite />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
-export default Site;
+export default withLoaderProvider(Site);
