@@ -1,14 +1,21 @@
-import React, { Fragment } from 'react';
-import withLoaderProvider from './loader/loader-provider'
+import React from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import withLoaderProvider from './loader/loader-provider';
 import Header from './header/header';
 import SWESite from './swe-index';
 
 const Site = () => {
+  const history = createBrowserHistory();
   return (
-    <Fragment>
+    <Router history={history}>
       <Header />
-      <SWESite />
-    </Fragment>
+      <Switch>
+        <Route path='/'>
+          <SWESite />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
