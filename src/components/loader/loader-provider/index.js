@@ -9,7 +9,7 @@ function withLoaderProvider(Component) {
 
     const providerValue = useMemo(() => {
       return { setLoaderActive };
-    }, [loaderActive]);
+    }, [setLoaderActive]);
 
     useEffect(() => {
       setTimeout(() => setLoaded(true), 1200);
