@@ -8,7 +8,8 @@ const Landing = () => {
     <div id='landing--music'>
       <div className='music-landing__title'>
         <h1>{LANDING.TITLE}</h1>
-        <span>{LANDING.DESC}</span>
+        <div className='music-landing__desc-item'>{LANDING.DESC}</div>
+        <div className='music-landing__desc-item'>{LANDING.DESC_2}</div>
       </div>
     </div>
   );
