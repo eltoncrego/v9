@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
-import HEADER_LINKS from '../../content/content--header-links';
+import SWE_HEADER_LINKS from '../../content/content--header-links';
 import util from './header-utils';
 import './header.css';
 
@@ -17,7 +17,7 @@ const Header = () => {
     history.push('/');
   }
 
-  const sweHeaderLinks = util.getHeaderLinks(HEADER_LINKS)
+  const sweHeaderLinks = util.getHeaderLinks(SWE_HEADER_LINKS)
 
   return (
     <div
