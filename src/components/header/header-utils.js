@@ -49,6 +49,7 @@ const getHeaderLinks = (content) => {
         </Link>
       );
     }
+    return null;
   });
 };
 

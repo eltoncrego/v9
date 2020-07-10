@@ -7,8 +7,8 @@ const Landing = () => {
   return (
     <div id='landing--music'>
       <div className='music-landing__title'>
-        <h1>Music</h1>
-        <span className='music-landing__desc'>{LANDING.DESC}</span>
+        <h1>{LANDING.TITLE}</h1>
+        <span>{LANDING.DESC}</span>
       </div>
     </div>
   );
