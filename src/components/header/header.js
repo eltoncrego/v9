@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   const handleMusicLogoClick = () => {
-    history.push('/');
+    // do nothing
   }
 
   const sweHeaderLinks = util.getHeaderLinks(SWE_HEADER_LINKS)
