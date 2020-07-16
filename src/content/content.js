@@ -38,7 +38,7 @@ export const MUSIC_MESSAGES = {
   LANDING: {
     TITLE: 'Music',
     DESC: 'I write music in my bedroom as an extension of my journal.',
-    DESC_2: 'Here\'s a list of links to my songs.',
+    DESC_2: "Here's a list of links to my songs.",
   },
   SONG_LINKS: [
     {
@@ -54,15 +54,15 @@ export const MUSIC_MESSAGES = {
     '/forever-demo': {
       TITLE: 'Forever (Demo)',
       DESC: [
-        'I wrote this song with my best friend about a serious relationship that had ended recently.',
-        'Here\'s a list of links to everywhere you can listen.',
+        'This is a song about a serious relationship of mine that has ended.',
+        "Here's a list of links to everywhere you can listen.",
       ],
     },
     '/lose-a-friend': {
       TITLE: 'Lose a Friend',
       DESC: [
-        'Available everywhere July 17th, 2020.',
-        'Here\'s a link to pre-save this track to your Spotify library.',
+        'This is a song about unrequited romantic feelings.',
+        "Here's a list of links to everywhere you can listen.",
       ],
     },
   },
@@ -104,8 +104,9 @@ export const MUSIC_MESSAGES = {
     ],
     '/lose-a-friend': [
       {
-        title: 'Pre-Save',
-        href: 'https://distrokid.com/hyperfollow/elty1/lose-a-friend-3',
+        title: 'Spotify',
+        href:
+          'https://open.spotify.com/track/3F2TFNNvnEc1jVwEzO35d0?si=130lPYmjSMW3XliZEoihyw',
       },
     ],
   },
