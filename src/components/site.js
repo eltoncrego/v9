@@ -5,8 +5,9 @@ import withLoaderProvider from './loader/loader-provider';
 import Header from './header/header';
 import SWESite from './swe/index';
 import MusicSite from './music/index';
-import { MUSIC_MESSAGES } from '../content/content';
+import { MUSIC_MESSAGES, LYRICS } from '../content/content--music';
 import SongTree from './music/song-tree';
+import Lyrics from './music/lyrics';
 
 const history = createBrowserHistory();
 
@@ -22,6 +23,11 @@ const Site = () => {
         {Object.keys(SONG_INFO).map((key) => (
           <Route key={key} exact path={key}>
             <SongTree pathname={key} songInfo={SONG_INFO[key]} />
+          </Route>
+        ))}
+        {Object.keys(LYRICS).map((key) => (
+          <Route key={key} exact path={`/lyrics/${key}`}>
+            <Lyrics pathname={key} lyrics={LYRICS[key]} />
           </Route>
         ))}
         <Route path='/'>

@@ -1,12 +1,16 @@
 import React, { useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { MUSIC_MESSAGES } from '../../../content/content';
+import { MUSIC_MESSAGES } from '../../../content/content--music';
 import LinkList from '../song-links';
 import './song-tree.css';
+import useLoader from '../../loader';
 
 const SongTree = ({ pathname, songInfo }) => {
   const { PATH_TO_TREES } = MUSIC_MESSAGES;
   const songLinks = PATH_TO_TREES[pathname];
+
+  const loader = useLoader();
+  useEffect(() => loader.setLoaderActive(true), [loader]);
 
   useEffect(() => {
     document.title = `Elty • ${songInfo.TITLE}`;

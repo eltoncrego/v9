@@ -1,5 +1,5 @@
 import React from 'react';
-import { MUSIC_MESSAGES } from '../../../content/content';
+import { MUSIC_MESSAGES } from '../../../content/content--music';
 import './landing.css';
 
 const Landing = () => {

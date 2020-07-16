@@ -3,7 +3,7 @@ import Landing from './landing';
 import useLoader from '../loader';
 import './music.css';
 import LinkList from './song-links';
-import { MUSIC_MESSAGES } from '../../content/content';
+import { MUSIC_MESSAGES } from '../../content/content--music';
 
 const MusicSite = () => {
   const loader = useLoader();
