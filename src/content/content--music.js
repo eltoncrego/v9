@@ -19,16 +19,15 @@ export const MUSIC_MESSAGES = {
       TITLE: 'Forever (Demo)',
       DESC: [
         'This is a song about a serious relationship of mine that has ended.',
-        "Here's a list of relative links.",
+        "Here's a list of relevant links.",
         'Thanks for listening :)',
       ],
     },
     '/lose-a-friend': {
       TITLE: 'Lose a Friend',
       DESC: [
-        'Available everywhere on July 17th, 2020',
         'This is a song about unrequited romantic feelings.',
-        "Here's a list of relative links.",
+        "Here's a list of relevant links.",
         'Thanks for listening :)',
       ],
     },
@@ -74,19 +73,38 @@ export const MUSIC_MESSAGES = {
       },
     ],
     '/lose-a-friend': [
-      // {
-      //   title: 'Lyrics',
-      //   to: '/lyrics/lose-a-friend',
-      // },
       {
-        title: 'Pre-Save',
-        href: 'https://distrokid.com/hyperfollow/elty1/lose-a-friend-3',
+        title: 'Lyrics',
+        to: '/lyrics/lose-a-friend',
       },
-      // {
-      //   title: 'Spotify',
-      //   href:
-      //     'https://open.spotify.com/track/3F2TFNNvnEc1jVwEzO35d0?si=130lPYmjSMW3XliZEoihyw',
-      // },
+      {
+        title: 'Spotify',
+        href:
+          'https://open.spotify.com/track/3F2TFNNvnEc1jVwEzO35d0?si=130lPYmjSMW3XliZEoihyw',
+      },
+      {
+        title: 'Apple Music',
+        href:
+          'https://music.apple.com/us/album/lose-a-friend-single/1519449276',
+      },
+      {
+        title: 'YouTube',
+        href: 'https://www.youtube.com/watch?v=tIvvG_REKwg',
+      },
+      {
+        title: 'Amazon Music',
+        href:
+          'https://www.amazon.com/Lose-Friend-Elty/dp/B08BJ9D5JS/ref=sr_1_1?dchild=1',
+      },
+      {
+        title: 'Google Play',
+        href:
+          'https://play.google.com/store/music/album?id=Bfuuon4czgv3h6royvgvea6rt2y&tid=song-Txa6z3q2kddtamluv5zakyapc5u',
+      },
+      {
+        title: 'Napster',
+        href: 'https://us.napster.com/artist/elty/album/lose-a-friend',
+      },
     ],
   },
 };
