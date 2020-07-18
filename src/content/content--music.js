@@ -102,6 +102,11 @@ export const MUSIC_MESSAGES = {
           'https://play.google.com/store/music/album?id=Bfuuon4czgv3h6royvgvea6rt2y&tid=song-Txa6z3q2kddtamluv5zakyapc5u',
       },
       {
+        title: 'iHeartRadio',
+        href:
+          'https://www.iheart.com/artist/elty-33932252/albums/lose-a-friend-104982978/',
+      },
+      {
         title: 'Napster',
         href: 'https://us.napster.com/artist/elty/album/lose-a-friend',
       },
