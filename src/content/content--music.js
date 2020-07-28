@@ -13,6 +13,10 @@ export const MUSIC_MESSAGES = {
       title: 'Lose a Friend',
       to: '/lose-a-friend',
     },
+    {
+      title: 'Dear Confidence',
+      to: '/dear-confidence',
+    },
   ],
   SONG_INFO: {
     '/forever-demo': {
@@ -31,6 +35,12 @@ export const MUSIC_MESSAGES = {
         'Thanks for listening :)',
       ],
     },
+    '/dear-confidence': {
+      TITLE: 'Dear Confidence',
+      DESC: [
+        'Available Everywhere August 14th, 2020.'
+      ]
+    }
   },
   PATH_TO_TREES: {
     '/forever-demo': [
@@ -110,6 +120,13 @@ export const MUSIC_MESSAGES = {
         title: 'Napster',
         href: 'https://us.napster.com/artist/elty/album/lose-a-friend',
       },
+    ],
+    '/dear-confidence': [
+      {
+        title: 'Pre-Save',
+        href:
+          'https://distrokid.com/hyperfollow/elty1/dear-confidence-5',
+      }
     ],
   },
 };
