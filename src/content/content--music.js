@@ -38,9 +38,11 @@ export const MUSIC_MESSAGES = {
     '/dear-confidence': {
       TITLE: 'Dear Confidence',
       DESC: [
-        'Available Everywhere August 14th, 2020.'
-      ]
-    }
+        "Please enjoy this journal entry from my time leading up to and in quarantine.",
+        'Below is a list of relevant links.',
+        'Thanks for listening :)',
+      ],
+    },
   },
   PATH_TO_TREES: {
     '/forever-demo': [
@@ -122,11 +124,14 @@ export const MUSIC_MESSAGES = {
       },
     ],
     '/dear-confidence': [
+      // {
+      //   title: 'Lyrics',
+      //   to: '/lyrics/dear-confidence',
+      // },
       {
         title: 'Pre-Save',
-        href:
-          'https://distrokid.com/hyperfollow/elty1/dear-confidence-5',
-      }
+        href: 'https://distrokid.com/hyperfollow/elty1/dear-confidence-5',
+      },
     ],
   },
 };
@@ -273,6 +278,58 @@ export const LYRICS = {
         'But there’s something special we got ',
         'Going on between us',
         'But you don’t wanna take it too far',
+      ],
+    ],
+  },
+  'dear-confidence': {
+    title: 'Dear Confidence',
+    lyrics: [
+      [
+        'Would you meet me for a coffee?',
+        'It’s been over a year.',
+        'I haven’t seen the man I was in quite some time...',
+        'Used to meet him here.',
+      ],
+      [
+        'I found myself without you,',
+        'I didn’t know who I was.',
+        'I thought I needed someone,',
+        'Who could build me up,',
+        'But it wasn’t enough.',
+      ],
+      [
+        'You told me I could never be the one.',
+        'I would never be someone that you loved',
+        'And I’d spend my whole life',
+        'Thinking I wasnt enough.',
+        'That I couldnt be the one',
+        'To build me up.',
+      ],
+      [
+        'I found myself on an island,',
+        'Surrounded by all my thoughts.',
+        'A picture of you in my mind of the man I wanna be,',
+        'But I’m not.',
+      ],
+      [
+        'Spent my whole life being selfish,',
+        'Thought I was the only one.',
+        'Spent my whole life beating myself down,',
+        'Never getting up.',
+      ],
+      [
+        'You told me I could never be the one.',
+        'I would never be someone that you loved',
+        'And I’d spend my whole life',
+        'Thinking I wasnt enough.',
+        'That I couldnt be the one',
+        'To build me up.',
+      ],
+      [
+        'Would you meet me for a coffee?',
+        'It’s been over a year.',
+        'Haven’t seen the man I was in quite some time...',
+        'Used to meet him here.',
       ],
     ],
   },
