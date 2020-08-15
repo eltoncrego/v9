@@ -38,7 +38,7 @@ export const MUSIC_MESSAGES = {
     '/dear-confidence': {
       TITLE: 'Dear Confidence',
       DESC: [
-        "Please enjoy this journal entry from my time leading up to and in quarantine.",
+        'Please enjoy this journal entry from my time leading up to and in quarantine.',
         'Below is a list of relevant links.',
         'Thanks for listening :)',
       ],
@@ -124,13 +124,37 @@ export const MUSIC_MESSAGES = {
       },
     ],
     '/dear-confidence': [
-      // {
-      //   title: 'Lyrics',
-      //   to: '/lyrics/dear-confidence',
-      // },
       {
-        title: 'Pre-Save',
-        href: 'https://distrokid.com/hyperfollow/elty1/dear-confidence-5',
+        title: 'Lyrics',
+        to: '/lyrics/dear-confidence',
+      },
+      {
+        title: 'Spotify',
+        href:
+          'https://open.spotify.com/track/2bhNmd9ESS0fdq48SAUnB2?si=j3bLKlwoTBGFf3Nd1b2UHw',
+      },
+      {
+        title: 'Apple Music',
+        href:
+          'https://music.apple.com/us/album/dear-confidence-single/1524992908',
+      },
+      {
+        title: 'YouTube',
+        href: 'https://www.youtube.com/watch?v=oSTyu35Vq8Y',
+      },
+      {
+        title: 'Google Play',
+        href:
+          'https://play.google.com/store/music/album/Elty_Dear_Confidence?id=Bhd2diplzrdzxjaiaxvf5ignmuq',
+      },
+      {
+        title: 'iHeartRadio',
+        href:
+          'https://www.iheart.com/artist/elty-33932252/albums/dear-confidence-107729729/',
+      },
+      {
+        title: 'Napster',
+        href: 'https://us.napster.com/artist/elty/album/dear-confidence',
       },
     ],
   },
