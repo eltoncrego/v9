@@ -6,10 +6,6 @@ export const MUSIC_MESSAGES = {
   },
   SONG_LINKS: [
     {
-      title: 'Forever (Demo)',
-      to: '/forever-demo',
-    },
-    {
       title: 'Lose a Friend',
       to: '/lose-a-friend',
     },
@@ -19,14 +15,6 @@ export const MUSIC_MESSAGES = {
     },
   ],
   SONG_INFO: {
-    '/forever-demo': {
-      TITLE: 'Forever (Demo)',
-      DESC: [
-        'This is a song about a serious relationship of mine that has ended.',
-        "Here's a list of relevant links.",
-        'Thanks for listening :)',
-      ],
-    },
     '/lose-a-friend': {
       TITLE: 'Lose a Friend',
       DESC: [
@@ -45,45 +33,6 @@ export const MUSIC_MESSAGES = {
     },
   },
   PATH_TO_TREES: {
-    '/forever-demo': [
-      {
-        title: 'Lyrics',
-        to: '/lyrics/forever-demo',
-      },
-      {
-        title: 'Spotify',
-        href:
-          'https://open.spotify.com/track/5LyscQjrwgDnxKjATb7tLC?si=Szofh0jMSnqj5NERtSbHXw',
-      },
-      {
-        title: 'Apple Music',
-        href:
-          'https://music.apple.com/us/album/forever-single/1517965180?uo=4&app=music&at=1001lry3&ct=dashboard',
-      },
-      {
-        title: 'YouTube',
-        href: 'https://www.youtube.com/watch?v=3iKpOG69yeI',
-      },
-      {
-        title: 'Amazon Music',
-        href:
-          'https://www.amazon.com/gp/product/B08B2SCYG9/?tag=distrokid06-20',
-      },
-      {
-        title: 'Google Play',
-        href:
-          'https://play.google.com/store/music/album/Elty_Forever?id=Brurrnnd5lhr4aky3ggarrw5hre',
-      },
-      {
-        title: 'iHeartRadio',
-        href:
-          'https://www.iheart.com/artist/elty-33932252/albums/forever-104397643/',
-      },
-      {
-        title: 'Napster',
-        href: 'https://us.napster.com/artist/elty/album/forever-486546730',
-      },
-    ],
     '/lose-a-friend': [
       {
         title: 'Lyrics',
