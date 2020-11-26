@@ -1,2 +1,2 @@
-# Version 8.0
-This version of my personal site marks the switch over to React, fully. I'll be updating the repo and this README with more information over time.
+# eltoncrego.com v9
+This version of my site was created when I made the switch to join [LinkedIn](linkedin.com) as a software engineer. It is still being worked on. This README will cover development and architectural decisions as I make them.
