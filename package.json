@@ -1,11 +1,14 @@
 {
   "name": "v9",
+  "homepage": "https://eltoncrego.com",
   "version": "9.20.0",
   "description": "This is my personal portfolio website. Designed to be the space where I post things that I'm proud of.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config config/webpack.dev.ts",
-    "build": "webpack --mode production --config config/webpack.prod.ts"
+    "build": "webpack --mode production --config config/webpack.prod.ts",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/eltoncrego/eltoncrego.github.io/issues"
   },
-  "homepage": "https://github.com/eltoncrego/eltoncrego.github.io#readme",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -30,6 +32,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.4",
     "@types/webpack": "^4.41.25",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
     "ts-loader": "^8.0.11",
     "ts-node": "^9.0.0",
