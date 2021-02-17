@@ -1,13 +1,24 @@
 const RESUME = [
   {
     title: 'Software Engineer',
+    company: 'LinkedIn',
+    site_link: 'https://www.linkedin.com/',
+    time: 'November 2020 - Present',
+    location: 'Sunnyvale, California',
+    desc: [
+      "LinkedIn is the world's largest professional network with nearly 740 million members in more than 200 countries and territories worldwide.",
+      "As a front-end engineer on the Skill Assessments team I've gotten the opportunity to build out many new and exciting features for both talent solutions and our main, user-facing site."
+    ]
+  },
+  {
+    title: 'Software Engineer',
     company: 'Gantri',
     site_link: 'https://www.gantri.com/',
-    time: 'April 2020 - Present',
+    time: 'April 2020 - November 2020',
     location: 'San Francisco, California',
     desc: [
       "Gantri is a new generation of lighting. We collaborate with today’s leading designers to create fresh, practical designs and manufacture them from cutting-edge sustainable materials. We’re about gifted designers, great designs, and a greener world.",
-      "I'm a newbie here, so I'm still learning the ropes"
+      "As a front-end engineer, I designed the architecture for and built out core feature of Gantri's internal admin panel system. The system is used to track orders, manage inventory, and support all facets of the business."
     ]
   },
   {
