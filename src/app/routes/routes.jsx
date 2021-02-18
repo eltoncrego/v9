@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Home from "../../pages/home/home";
 
 export const RoutePaths = {
   home: '/',
@@ -14,7 +15,7 @@ const Routes = ({ children }) => (
     {children}
     <Switch>
       <Route path={RoutePaths.home}>
-        <h1>Route content.</h1>
+        <Home/>
       </Route>
     </Switch>
   </Router>
