@@ -3,13 +3,16 @@ import { ApplicationStyles } from '../shared/app-styles';
 import { Normalize } from '../shared/normalize-styles';
 import { StyledContentWrapper } from './content-wrapper-styles';
 import Header from './header/header';
+import Routes from './routes/routes';
 
 const App = () => (
   <Fragment>
-    <Normalize/>
-    <ApplicationStyles/>
+    <Normalize />
+    <ApplicationStyles />
     <StyledContentWrapper>
-      <Header/>
+      <Routes>
+        <Header />
+      </Routes>
     </StyledContentWrapper>
   </Fragment>
 );

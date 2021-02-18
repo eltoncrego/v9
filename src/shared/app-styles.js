@@ -1,10 +1,30 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export const color = {
   background: '#FFFFFF',
   text: '#000000',
   lightShade: '#f3f3f3',
   accent: '#7C9072',
+}
+
+export const spacing = {
+  1: '4px',
+  2: '8px',
+  3: '16px',
+  4: '24px',
+  5: '32px',
+  6: '64px',
+}
+
+export const transitions = {
+  standard: (propertyValue) => css`
+    transition: 300ms ease-in-out;
+    transition-property: ${propertyValue};
+  `,
+  interaction: (propertyValue) => css`
+    transition: 150ms ease-in-out;
+    transition-property: ${propertyValue};
+  `,
 }
 
 export const ApplicationStyles = createGlobalStyle`
