@@ -3,7 +3,7 @@ import {
   StyledMainSection,
   StyledPageWrapper,
   StyledSecondarySection,
-} from '../../shared/styles/app-styles';
+} from '../../shared/app-styles';
 
 const DigitalResume = () => (
   <StyledPageWrapper>

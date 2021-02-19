@@ -2,7 +2,7 @@ import React from 'react';
 import {
   StyledMainSection,
   StyledPageWrapper,
-} from '../../shared/styles/app-styles';
+} from '../../shared/app-styles';
 
 const Home = () => (
   <StyledPageWrapper>

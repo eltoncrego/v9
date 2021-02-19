@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { color, spacing } from '../../styles/app-styles';
+import { color, spacing } from '../../shared/app-styles';
 
 export const StyledNavigationLinks = styled.ul`
   list-style-type: none;

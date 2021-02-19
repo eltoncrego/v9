@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavLinks from '../../shared/components/nav-links/nav-links';
+import NavLinks from '../nav-links/nav-links';
 import { RoutePaths } from '../routes/routes';
 import { StyledHeaderWrapper } from './header-styles';
 

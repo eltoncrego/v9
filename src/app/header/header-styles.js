@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, spacing, transitions } from '../../shared/styles/app-styles';
+import { color, spacing, transitions } from '../../shared/app-styles';
 
 export const StyledHeaderWrapper = styled.header`
   display: flex;
