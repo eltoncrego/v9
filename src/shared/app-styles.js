@@ -56,3 +56,7 @@ export const StyledPageWrapper = styled.div`
 export const StyledMainSection = styled.div`
   margin-bottom: 120px;
 `
+
+export const StyledSecondarySection = styled.div`
+  margin-bottom: 64px;
+`

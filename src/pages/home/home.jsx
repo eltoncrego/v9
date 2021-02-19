@@ -1,10 +1,14 @@
 import React from 'react';
-import { StyledMainSection, StyledPageWrapper } from '../../shared/app-styles';
+import {
+  StyledMainSection,
+  StyledPageWrapper,
+  StyledSecondarySection,
+} from '../../shared/app-styles';
 
 const Home = () => (
   <StyledPageWrapper>
     <StyledMainSection>
-      <h1>Hello there.</h1>
+      <h1>Elton Christopher Rego.</h1>
       <p>
         My name is <b>Elton Rego</b> and I'm a <b>Software Engineer</b> at{' '}
         <a href='https://about.linkedin.com'>LinkedIn.</a>

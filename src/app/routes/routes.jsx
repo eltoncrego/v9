@@ -1,24 +1,25 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import Home from "../../pages/home/home";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import DigitalResume from '../../pages/digital-resume/digital-resume';
+import Home from '../../pages/home/home';
+import Header from '../header/header';
 
 export const RoutePaths = {
   home: '/',
+  resume: '/digital-resume',
 };
 
-const Routes = ({ children }) => (
+const Routes = () => (
   <Router>
-    {children}
+    <Header />
     <Switch>
+      <Route path={RoutePaths.resume}>
+        <DigitalResume />
+      </Route>
       <Route path={RoutePaths.home}>
-        <Home/>
+        <Home />
       </Route>
     </Switch>
   </Router>
-)
-
+);
 export default Routes;
