@@ -1,9 +1,9 @@
 import React from 'react';
+import NavLinks from '../../shared/components/nav-links/nav-links';
 import {
   StyledMainSection,
   StyledPageWrapper,
-  StyledSecondarySection,
-} from '../../shared/app-styles';
+} from '../../shared/styles/app-styles';
 
 const Home = () => (
   <StyledPageWrapper>
@@ -23,6 +23,10 @@ const Home = () => (
         hopes of creating a more streamlined, modern look and feel. Please check
         back soon.
       </p>
+    </StyledMainSection>
+    <StyledMainSection>
+      <h2>Some useful links.</h2>
+      <NavLinks />
     </StyledMainSection>
   </StyledPageWrapper>
 );

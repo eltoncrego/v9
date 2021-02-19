@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import { ApplicationStyles } from '../shared/app-styles';
-import { Normalize } from '../shared/normalize-styles';
+import { ApplicationStyles } from '../shared/styles/app-styles';
+import { Normalize } from '../shared/styles/normalize-styles';
 import { StyledContentWrapper } from './content-wrapper-styles';
-import Routes, { RoutePaths } from './routes/routes';
+import Routes from './routes/routes';
 
 const App = () => (
   <Fragment>

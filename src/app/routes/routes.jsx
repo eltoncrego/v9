@@ -9,6 +9,8 @@ export const RoutePaths = {
   resume: '/digital-resume',
 };
 
+export const NavigationRoutes = { resume: 'digital resume' };
+
 const Routes = () => (
   <Router>
     <Header />
