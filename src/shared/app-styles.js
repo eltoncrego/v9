@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 export const color = {
   background: '#FFFFFF',
@@ -48,3 +48,11 @@ export const ApplicationStyles = createGlobalStyle`
     }
   }
 `;
+
+export const StyledPageWrapper = styled.div`
+  padding-top: 32px;
+`
+
+export const StyledMainSection = styled.div`
+  margin-bottom: 120px;
+`
