@@ -1,11 +1,11 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css } from 'styled-components';
 
 export const color = {
   background: '#FFFFFF',
   text: '#000000',
   lightShade: '#f3f3f3',
   accent: '#7C9072',
-}
+};
 
 export const spacing = {
   1: '4px',
@@ -14,18 +14,18 @@ export const spacing = {
   4: '24px',
   5: '32px',
   6: '64px',
-}
+};
 
 export const transitions = {
-  standard: (propertyValue) => css`
+  standard: propertyValue => css`
     transition: 300ms ease-in-out;
     transition-property: ${propertyValue};
   `,
-  interaction: (propertyValue) => css`
+  interaction: propertyValue => css`
     transition: 150ms ease-in-out;
     transition-property: ${propertyValue};
   `,
-}
+};
 
 export const ApplicationStyles = createGlobalStyle`
   body { 
@@ -37,4 +37,14 @@ export const ApplicationStyles = createGlobalStyle`
     flex-direction: column;
     align-items: center;
   }
-`
+
+  a {
+    color: ${color.text};
+    font-weight: bold;
+    ${transitions.interaction('color')}
+
+    &:hover {
+      color: ${color.accent};
+    }
+  }
+`;
