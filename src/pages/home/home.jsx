@@ -1,5 +1,4 @@
 import React from 'react';
-import NavLinks from '../../shared/components/nav-links/nav-links';
 import {
   StyledMainSection,
   StyledPageWrapper,
@@ -8,7 +7,6 @@ import {
 const Home = () => (
   <StyledPageWrapper>
     <StyledMainSection>
-      <h1>Elton Christopher Rego.</h1>
       <p>
         My name is <b>Elton Rego</b> and I'm a <b>Software Engineer</b> at{' '}
         <a href='https://about.linkedin.com'>LinkedIn.</a>
@@ -23,10 +21,6 @@ const Home = () => (
         hopes of creating a more streamlined, modern look and feel. Please check
         back soon.
       </p>
-    </StyledMainSection>
-    <StyledMainSection>
-      <h2>Some useful links.</h2>
-      <NavLinks />
     </StyledMainSection>
   </StyledPageWrapper>
 );

@@ -13,6 +13,12 @@ export const StyledNavigationLinks = styled.ul`
 export const StyledNavigationLink = styled(Link)`
   text-decoration: none;
   font-weight: normal;
+  font-size: 14px;
+`;
+
+const activatedLinkStyles = css`
+  text-decoration: underline;
+  pointer-events: none;
 `;
 
 export const StyledNavigationItem = styled.li`
@@ -20,20 +26,12 @@ export const StyledNavigationItem = styled.li`
     margin-left: ${spacing[3]};
   }
 
+  &:hover {
+    color: ${color.text};
+    text-decoration: underline;
+  }
+
   & > ${StyledNavigationLink} {
-    ${({ isCurrentPath }) =>
-      isCurrentPath
-        ? css`
-            text-decoration: underline;
-            pointer-events: none;
-            &:hover {
-              color: ${color.text};
-            }
-          `
-        : css`
-            &:hover {
-              text-decoration: underline;
-            }
-          `}
+    ${({ isCurrentPath }) => isCurrentPath && activatedLinkStyles}
   }
 `;

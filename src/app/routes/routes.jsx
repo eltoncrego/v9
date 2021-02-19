@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import DigitalResume from '../../pages/digital-resume/digital-resume';
 import Home from '../../pages/home/home';
 import Header from '../header/header';
+import AnimatedRoute from './animated-route/animated-route';
 
 export const RoutePaths = {
   home: '/',
@@ -14,14 +15,12 @@ export const NavigationRoutes = { resume: 'digital resume' };
 const Routes = () => (
   <Router>
     <Header />
-    <Switch>
-      <Route path={RoutePaths.resume}>
+      <AnimatedRoute path={RoutePaths.resume}>
         <DigitalResume />
-      </Route>
-      <Route path={RoutePaths.home}>
+      </AnimatedRoute>
+      <AnimatedRoute path={RoutePaths.home}>
         <Home />
-      </Route>
-    </Switch>
+      </AnimatedRoute>
   </Router>
 );
 export default Routes;

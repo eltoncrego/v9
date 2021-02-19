@@ -50,13 +50,35 @@ export const ApplicationStyles = createGlobalStyle`
 `;
 
 export const StyledPageWrapper = styled.div`
+  position: absolute;
   padding-top: 32px;
-`
+  ${transitions.standard('opacity, transform')}
+
+  &.page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  &.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.page-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.page-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+`;
 
 export const StyledMainSection = styled.div`
   margin-bottom: 120px;
-`
+`;
 
 export const StyledSecondarySection = styled.div`
   margin-bottom: 64px;
-`
+`;
