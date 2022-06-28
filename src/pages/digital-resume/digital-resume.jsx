@@ -50,9 +50,25 @@ const DigitalResume = () => (
             worldwide.
           </StyledCompanyInformation>
           <p>
-            At LinkedIn I'm working as a Front-End Engineer on the Skill
-            Assessments Team.
+            At LinkedIn I'm working as a Front-End Engineer and the Web UI Team Lead on Skills Demonstration.
           </p>
+          <p>Here’s some cool stuff I’ve done:</p>
+          <ul>
+            <li>Lead architecture design, implementation, and delivery of Skills Demonstration MVP on Web</li>
+            <li>Lead, organized, and shipped the hirer side self-serve flow for Skills Path in partnership with Singapore</li>
+            <li>Helped implement and deliver Skills Path MVP ahead of launch schedule</li>
+            <li>Implemented a realtime feedback feature for practice quizzes helping members gain confidence going into the actual assessments</li>
+            <li>Transitioned all feature work to be compatible with Dark Mode</li>
+            <li>Transitioned skill assessments to new EmberJS framework version</li>
+            <li>Spearheaded 100% graphql compatibility with skills demonstration code</li>
+            <li>Organized and moderated bi-weekly culture meetings where team members get a chance to present on their hobbies and interests outside of work</li>
+            <li>Organized and moderated weekly design forum meetings to encourage visibility and discussion on new feature development</li>
+            <li>Developed first use of animations within skill assessments hub to deliver a collapsible search bar with accessible, scrolling filter pills</li>
+            <li>Updated Skill Assessment and Skills Path layouts and styling to be fully responsive and accessible in all browsers, zoom levels, and to anyone wishing to use the site</li>
+            <li>Updated integrated row decorations and hover-cards on LinkedIn recruiter to be more useful to users on our hiring platform</li>
+            <li>Participated in multiple on-call shifts to maintain the stability of LinkedIn platforms</li>
+            <li>Authored multiple design documents on new feature functionality</li>
+          </ul>
         </StyledResumeSection>
         <StyledResumeSection>
           <StyledJobTitle>
@@ -70,7 +86,7 @@ const DigitalResume = () => (
             good designers' lights radically more attainable and sustainable.{' '}
           </StyledCompanyInformation>
           <p>
-            I worked primarily on the Admin panel React application for managing
+            I lead development of the Admin panel React application for managing
             shipments, orders, print jobs, etc.
           </p>
           <p>Here’s some cool stuff I’ve done:</p>

@@ -10,17 +10,17 @@ export const RoutePaths = {
   resume: '/digital-resume',
 };
 
-export const NavigationRoutes = { resume: 'digital resume' };
+export const NavigationRoutes = { home: 'About Me', resume: 'Digital Resume' };
 
 const Routes = () => (
   <Router>
     <Header />
-      <AnimatedRoute path={RoutePaths.resume}>
-        <DigitalResume />
-      </AnimatedRoute>
-      <AnimatedRoute path={RoutePaths.home}>
-        <Home />
-      </AnimatedRoute>
+    <AnimatedRoute path={RoutePaths.resume}>
+      <DigitalResume />
+    </AnimatedRoute>
+    <AnimatedRoute path={RoutePaths.home}>
+      <Home />
+    </AnimatedRoute>
   </Router>
 );
 export default Routes;

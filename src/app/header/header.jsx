@@ -7,7 +7,7 @@ import { StyledHeaderWrapper } from './header-styles';
 const Header = () => (
   <StyledHeaderWrapper>
     <Link to={RoutePaths.home}>
-      <h1>elton christopher rego.</h1>
+      <h1>Elton Christopher Rego.</h1>
     </Link>
     <NavLinks />
   </StyledHeaderWrapper>

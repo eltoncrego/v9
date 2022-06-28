@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#7C9072"/>
+    <meta name="theme-color" content="#7C9072" />
     <meta
       name="description"
       content="Elton C. Rego is a software engineer based in Oakland, CA specializing in building beautiful UI components and web applications for enterprise software."
@@ -13,8 +13,12 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!-- Import statements for google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;700&family=Playfair+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Elty</title>
     <script type="text/javascript">
@@ -46,7 +50,7 @@
               l.pathname.slice(0, -1) +
                 (q.p || '') +
                 (q.q ? '?' + q.q : '') +
-                l.hash
+                l.hash,
             );
           }
         }
